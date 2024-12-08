@@ -1,0 +1,20 @@
+// placeholder input
+
+@mixin aj-placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin aj-font-member($size) {
+  font-family: 'Federo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: $size;
+}

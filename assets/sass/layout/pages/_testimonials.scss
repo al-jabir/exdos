@@ -1,0 +1,91 @@
+@use '../../utils' as *;
+
+.aj-testimonials {
+  &-desc {
+    @include aj-font-member(100px);
+    color: var(--aj-heading-color);
+    @media #{$lg} {
+      font-size: 75px;
+    }
+    @media #{$md} {
+      font-size: 55px;
+    }
+    @media #{$xs} {
+      font-size: 35px;
+    }
+  }
+  &-name {
+    font-size: 30px;
+    margin-bottom: 5px;
+    @media #{$xs} {
+      font-size: 25px;
+      margin-bottom: 3px;
+    }
+  }
+  &-desig {
+    font-size: 17px;
+    color: #57595c;
+    margin-left: 70px;
+    & span {
+      width: 60px;
+      height: 1px;
+      background-color: #57595c;
+      display: inline-block;
+      transform: translateY(-5px);
+      margin-right: 5px;
+    }
+  }
+  &-shape {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    @media #{$md,$xs} {
+      top: 0;
+    }
+  }
+  &-thumb {
+    &-1 {
+      left: 0;
+      bottom: 125px;
+    }
+    &-2 {
+      top: 30px;
+      right: 0;
+    }
+  }
+}
+
+.aj-swiper-button-next {
+  position: absolute;
+  right: -100px;
+  top: 32%;
+  @media #{$xxl,$xl,$lg,$md,$sm} {
+    right: 0;
+    bottom: 0;
+    top: inherit;
+    z-index: 9;
+  }
+  @media #{$xs} {
+    top: inherit;
+    right: 30px;
+    bottom: -45px;
+  }
+}
+.aj-swiper-button-prev {
+  position: absolute;
+  left: -100px;
+  top: 32%;
+  @media #{$xxl,$xl,$lg,$md,$sm} {
+    left: 0;
+    bottom: 0;
+    top: inherit;
+    z-index: 9;
+  }
+  @media #{$xs} {
+    top: inherit;
+    left: 30px;
+    bottom: -45px;
+  }
+}

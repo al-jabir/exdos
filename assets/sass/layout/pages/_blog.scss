@@ -1,0 +1,48 @@
+@use '../../utils' as *;
+
+.aj-blog {
+  &-items {
+    @media #{$xs} {
+      margin-bottom: 30px;
+    }
+  }
+  &-thumb {
+    & img {
+      border-radius: 20px;
+    }
+  }
+  &-title {
+    & .blog-s {
+      width: 2px;
+      height: 16px;
+      background-color: var(--aj-body-color);
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
+  &-desc {
+    color: var(--aj-heading-color);
+    @include aj-font-member(30px);
+  }
+  &-btn {
+    a {
+      color: var(--aj-body-color);
+      @include aj-font-member(30px);
+      transition: 0.3s;
+      i {
+        transform: rotate(-45deg);
+        margin-left: 10px;
+      }
+      &:hover {
+        color: var(--aj-heading-color);
+      }
+    }
+  }
+}
+
+.py-130 {
+  @media #{$xs} {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+}

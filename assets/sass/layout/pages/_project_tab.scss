@@ -1,0 +1,71 @@
+@use '../../utils' as *;
+
+.aj-project-tab {
+  &-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media #{$xxl,$xl,$lg} {
+      justify-content: start;
+    }
+    & button {
+      display: block;
+      color: #fff;
+      font-size: 100px;
+      font-family: var(--aj-font-heading);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.1;
+      padding: 17px 30px 17px 100px;
+      border-bottom: 1px solid #2f446b;
+      transition: 0.3s;
+      @media #{$xxl} {
+        font-size: 90px;
+        padding: 20px 30px 17px 65px;
+      }
+      @media #{$xxl,$xl} {
+        font-size: 75px;
+        padding: 17px 30px 17px 50px;
+      }
+      @media #{$lg} {
+        font-size: 64px;
+        padding: 17px 30px 17px 40px;
+      }
+      @media #{$md} {
+        display: inline-block;
+        font-size: 18px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      @media #{$xs} {
+        display: inline-block;
+        font-size: 15px;
+        padding: 10px 5px;
+      }
+      &.active {
+        border-color: var(--aj-theme-color-2);
+        color: var(--aj-theme-color-2);
+      }
+    }
+  }
+  &-thumb {
+    & a {
+      & img {
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+.pr-50 {
+  @media #{$xs} {
+    padding: 30px 10px;
+  }
+}
+
+.aj-px-25 {
+  @media #{$md} {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+}

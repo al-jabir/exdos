@@ -1,0 +1,58 @@
+@use '../../utils' as *;
+
+.aj-services {
+  border: 1px solid #57595c;
+  margin-right: -1px;
+  border-radius: 20px;
+  padding: 40px;
+  transition: 0.3s;
+  &__title {
+    @media #{$xxl,$xl} {
+      font-size: 29px;
+    }
+  }
+  &__list {
+    & ul {
+      list-style: none;
+      & li {
+        margin-bottom: 10px;
+        position: relative;
+        &::before {
+          background-color: #57595c;
+          content: '';
+          height: 8px;
+          width: 8px;
+          display: inline-block;
+          border-radius: 30px;
+          margin-right: 10px;
+          transform: translateY(-1px);
+        }
+      }
+    }
+  }
+  &:hover {
+    background-color: var(--aj-cream);
+    & .aj-svr-btn {
+      background-color: var(--aj-theme-color);
+      color: #fff;
+    }
+  }
+}
+
+.aj-svr-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--aj-cream);
+  padding: 6px 30px;
+  border-radius: 5px;
+  font-family: 'Federo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--aj-black-common);
+  transition: 0.3s;
+  & i {
+    transform: rotate(-45deg);
+  }
+}

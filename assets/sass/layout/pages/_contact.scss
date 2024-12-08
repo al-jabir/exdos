@@ -1,0 +1,15 @@
+@use '../../utils' as *;
+
+.aj-contact {
+  &-form {
+    &-title {
+      color: var(--aj-heading-color);
+      @include aj-font-member(30px);
+    }
+  }
+}
+.pl-50 {
+  @media #{$xs} {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,75 @@
+@use '../../utils' as *;
+
+.aj-newsletter {
+  &-middle {
+    margin-top: -115px;
+  }
+  &-bg {
+    padding: 80px;
+    border-radius: 20px;
+    @media #{$md} {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    @media #{$xs} {
+      padding: 60px 20px;
+    }
+  }
+  &-back {
+    position: absolute;
+    opacity: 0.1;
+    font-size: 100px;
+    left: 100px;
+    font-style: normal;
+    font-weight: 400;
+    color: #ffffff;
+    bottom: -42px;
+    @media #{$xxl,$lg} {
+      font-size: 90px;
+    }
+    @media #{$xl} {
+      font-size: 60px;
+      bottom: -27px;
+    }
+    @media #{$md} {
+      font-size: 58px;
+      left: 70px;
+      bottom: -25px;
+    }
+  }
+  &-box {
+    & form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media #{$xs} {
+        display: block;
+      }
+    }
+    & input {
+      border-color: #ffffff;
+      color: #fff;
+      &:focus {
+        border-color: #fff;
+        &::placeholder {
+          opacity: 0;
+        }
+      }
+      @include aj-placeholder {
+        color: #fff;
+      }
+    }
+  }
+  &-input {
+    width: calc(100% - 210px);
+    @media #{$xs} {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    & img {
+      position: absolute;
+      right: 10px;
+      bottom: 20px;
+    }
+  }
+}

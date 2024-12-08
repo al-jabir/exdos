@@ -1,0 +1,64 @@
+@use '../../utils' as *;
+
+.aj-about {
+  &-box {
+    @media #{$lg,$md,$xs} {
+      padding-left: 0;
+    }
+  }
+
+  &-img {
+    @media #{$lg} {
+      margin-top: 50px;
+    }
+    img {
+      border-radius: 20px;
+    }
+  }
+}
+.aj-about-video {
+  @media #{$xl,$lg,$md} {
+    padding-left: 20px;
+  }
+  @media #{$lg} {
+    margin-top: 50px;
+  }
+  @media #{$xs} {
+    margin-top: 20px;
+    padding-left: 0px;
+  }
+  &-icon {
+    & a {
+      height: 80px;
+      width: 80px;
+      border: 1px solid #57595c;
+      border-radius: 50%;
+      line-height: 75px;
+      text-align: center;
+      display: inline-block;
+    }
+  }
+  & h4 {
+    font-family: 'Federo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #57595c;
+  }
+}
+
+.aj-about-shape-1 {
+  top: 18%;
+  left: 0;
+  z-index: 1;
+}
+.aj-about-shape-2 {
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.aj-about-shape-3 {
+  top: 40%;
+  left: 35%;
+  z-index: 1;
+}

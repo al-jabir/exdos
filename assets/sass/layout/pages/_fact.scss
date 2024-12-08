@@ -1,0 +1,35 @@
+@use '../../utils' as *;
+
+.aj-fact {
+  text-align: center;
+  &-icon {
+    margin-bottom: 30px;
+  }
+  &-title {
+    color: #ffffff;
+    opacity: 0.5;
+    @include aj-font-member(30px);
+    margin-bottom: 30px;
+    @media #{$lg} {
+      font-size: 27px;
+    }
+    @media #{$md} {
+      font-size: 18px;
+    }
+  }
+  &-number {
+    color: #ffffff;
+    @include aj-font-member(100px);
+    @media #{$md} {
+      font-size: 80px;
+    }
+  }
+}
+.col {
+  @media #{$md} {
+    flex: 50%;
+  }
+  @media #{$xs} {
+    flex: 100%;
+  }
+}
