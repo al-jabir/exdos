@@ -13,7 +13,7 @@
 }
 
 @mixin aj-font-member($size) {
-  font-family: 'Federo';
+  font-family: var(--aj-font-heading);
   font-style: normal;
   font-weight: 400;
   font-size: $size;
