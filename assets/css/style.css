@@ -204,7 +204,7 @@
   transform: translateY(100%);
 }
 .aj-btn-circle {
-  font-family: "Federo";
+  font-family: var(--aj-font-heading);
   font-style: normal;
   font-weight: 400;
   font-size: 60px;
@@ -241,13 +241,13 @@
 
 .aj-section-title {
   color: var(--aj-heading-color);
-  font-family: "Federo";
+  font-family: var(--aj-font-heading);
   font-style: normal;
   font-weight: 400;
   font-size: 60px;
 }
 .aj-section-title-xs {
-  font-family: "Federo";
+  font-family: var(--aj-font-heading);
   font-style: normal;
   font-weight: 400;
   font-size: 100px;
@@ -7724,14 +7724,71 @@ img {
   }
 }
 .aj-hero-title-h2 {
-  font-size: 98px;
-  color: #fff;
+  color: #ffffff;
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
   text-transform: uppercase;
-  margin: 0;
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+  .aj-hero-title-h2 {
+    font-size: 65px;
+  }
+}
+@media (max-width:767px) {
+  .aj-hero-title-h2 {
+    font-size: 39px;
+  }
 }
 .aj-hero-title-h2 i {
   transform: rotate(-45deg);
   color: var(--aj-theme-color-2);
+}
+.aj-hero-h2-desc {
+  display: flex;
+  align-items: center;
+}
+.aj-hero-h2-desc p {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+}
+@media (max-width:767px) {
+  .aj-hero-h2-desc p {
+    font-size: 18px;
+  }
+}
+.aj-hero-h2-arrow {
+  margin-left: 40px;
+}
+.aj-hero-h2-arrow a {
+  display: flex;
+  align-items: center;
+}
+.aj-hero-h2-arrow-bg {
+  height: 65px;
+  width: 30px;
+  background-color: #ffffff;
+  opacity: 0.2;
+  display: inline-block;
+}
+.aj-hero-h2-arrow i {
+  font-size: 50px;
+  color: #b1b4ba;
+  display: inline-flex;
+  margin-left: -20px;
+}
+.aj-hero-h2-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: calc(100% - 100px);
+  width: 40%;
+  background-size: cover;
 }
 
 .hero-info {
@@ -8132,7 +8189,7 @@ img {
 
 .aj-contact-form-title {
   color: var(--aj-heading-color);
-  font-family: "Federo";
+  font-family: var(--aj-font-heading);
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -8153,7 +8210,7 @@ img {
 .aj-fact-title {
   color: #ffffff;
   opacity: 0.5;
-  font-family: "Federo";
+  font-family: var(--aj-font-heading);
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -8171,7 +8228,7 @@ img {
 }
 .aj-fact-number {
   color: #ffffff;
-  font-family: "Federo";
+  font-family: var(--aj-font-heading);
   font-style: normal;
   font-weight: 400;
   font-size: 100px;
@@ -8223,7 +8280,7 @@ img {
 }
 .aj-team-title {
   color: var(--aj-heading-color);
-  font-family: "Federo";
+  font-family: var(--aj-font-heading);
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -8293,7 +8350,7 @@ img {
 }
 
 .aj-testimonials-desc {
-  font-family: "Federo";
+  font-family: var(--aj-font-heading);
   font-style: normal;
   font-weight: 400;
   font-size: 100px;
@@ -8418,14 +8475,14 @@ img {
 }
 .aj-award-item span {
   color: var(--aj-body-color);
-  font-family: "Federo";
+  font-family: var(--aj-font-heading);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
 }
 .aj-award-title {
   color: var(--aj-heading-color);
-  font-family: "Federo";
+  font-family: var(--aj-font-heading);
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -8486,14 +8543,14 @@ img {
 }
 .aj-blog-desc {
   color: var(--aj-heading-color);
-  font-family: "Federo";
+  font-family: var(--aj-font-heading);
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
 }
 .aj-blog-btn a {
   color: var(--aj-body-color);
-  font-family: "Federo";
+  font-family: var(--aj-font-heading);
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
