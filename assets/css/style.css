@@ -8676,4 +8676,24 @@ img {
   }
 }
 
+.aj-video-area {
+  padding: 300px 30px;
+}
+@media only screen and (min-width:1200px) and (max-width:1400px), only screen and (min-width:992px) and (max-width:1199px), only screen and (min-width:768px) and (max-width:991px), (max-width:767px) {
+  .aj-video-area {
+    padding: 200px 30px;
+  }
+}
+@media (max-width:767px) {
+  .aj-video-area {
+    padding: 100px 30px;
+  }
+}
+
+@media (max-width:767px) {
+  .-play-btn img {
+    width: 50%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
