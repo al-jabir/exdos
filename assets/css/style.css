@@ -297,6 +297,13 @@
   font-family: var(--aj-font-body);
   font-weight: 500;
 }
+.aj-section-title-subtitle span {
+  height: 10px;
+  width: 10px;
+  background: var(--aj-theme-color);
+  display: inline-block;
+  border-radius: 5px;
+}
 
 * {
   margin: 0;
