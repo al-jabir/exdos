@@ -8690,8 +8690,11 @@ img {
   }
 }
 
+.aj-video-btn {
+  text-align: center;
+}
 @media (max-width:767px) {
-  .-play-btn img {
+  .aj-video-btn img {
     width: 50%;
   }
 }

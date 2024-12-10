@@ -12,7 +12,8 @@
   }
 }
 
-.-play-btn {
+.aj-video-btn {
+  text-align: center;
   & img {
     @media #{$xs} {
       width: 50%;
