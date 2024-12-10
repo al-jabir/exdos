@@ -8307,6 +8307,54 @@ img {
   }
 }
 
+.aj-portfolio {
+  border: 4px solid tomato;
+  background-color: tomato;
+}
+.aj-portfolio-items {
+  margin-bottom: 23px;
+  transition: 0.3s;
+}
+.aj-portfolio-items__thumb img {
+  width: 100%;
+  border-radius: 20px;
+}
+.aj-portfolio-items__text {
+  position: absolute;
+  left: 100px;
+  bottom: 30px;
+  text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.aj-portfolio-items__text span {
+  display: inline-block;
+  background-color: var(--aj-white);
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: var(--aj-font-body);
+  font-weight: 500;
+  color: var(--aj-heading-color);
+  padding: 10px 21px;
+}
+.aj-portfolio-items__text__title {
+  background-color: var(--aj-white);
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--aj-heading-color);
+  padding: 21px 60px;
+}
+.aj-portfolio-items:hover .aj-portfolio-items__text {
+  opacity: 1;
+  visibility: visible;
+  bottom: 100px;
+}
+
 @media only screen and (min-width:1200px) and (max-width:1400px) {
   .aj-team-info {
     margin-left: 35px;
