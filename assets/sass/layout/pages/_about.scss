@@ -15,7 +15,50 @@
       border-radius: 20px;
     }
   }
+  &-content {
+    & ul {
+      & li {
+        margin-bottom: 20px;
+        & i {
+          margin-right: 10px;
+          font-weight: 300;
+          font-size: 30px;
+          color: var(--aj-black);
+        }
+        & span {
+          @include aj-font-member(30px);
+          color: var(--aj-heading-color);
+        }
+      }
+    }
+  }
+  &-circle {
+    &-img {
+      position: absolute;
+      top: 0;
+      right: 150px;
+      & img {
+        max-width: inherit;
+      }
+    }
+  }
+  &-fact {
+    &-icon {
+      & i {
+        font-size: 110px;
+      }
+    }
+    &-title {
+      @include aj-font-member(30px);
+      color: var(--aj-heading-color);
+    }
+    &-number {
+      @include aj-font-member(110px);
+      color: var(--aj-heading-color);
+    }
+  }
 }
+
 .aj-about-video {
   @media #{$xl,$lg,$md} {
     padding-left: 20px;

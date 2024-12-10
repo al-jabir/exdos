@@ -7930,6 +7930,47 @@ img {
 .aj-about-img img {
   border-radius: 20px;
 }
+.aj-about-content ul li {
+  margin-bottom: 20px;
+}
+.aj-about-content ul li i {
+  margin-right: 10px;
+  font-weight: 300;
+  font-size: 30px;
+  color: var(--aj-black);
+}
+.aj-about-content ul li span {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--aj-heading-color);
+}
+.aj-about-circle-img {
+  position: absolute;
+  top: 0;
+  right: 150px;
+}
+.aj-about-circle-img img {
+  max-width: inherit;
+}
+.aj-about-fact-icon i {
+  font-size: 110px;
+}
+.aj-about-fact-title {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--aj-heading-color);
+}
+.aj-about-fact-number {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 110px;
+  color: var(--aj-heading-color);
+}
 
 @media only screen and (min-width:1200px) and (max-width:1400px), only screen and (min-width:992px) and (max-width:1199px), only screen and (min-width:768px) and (max-width:991px) {
   .aj-about-video {
