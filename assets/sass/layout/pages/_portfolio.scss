@@ -16,33 +16,33 @@
     &__text {
       position: absolute;
       left: 100px;
-      bottom: 30px;
-      text-transform: uppercase;
+      bottom: 50px;
       opacity: 0;
       visibility: hidden;
       transition: 0.3s;
       & span {
+        text-transform: uppercase;
         display: inline-block;
         background-color: var(--aj-white);
         @include aj-font-member(15px);
         font-family: var(--aj-font-body);
         font-weight: 500;
         color: var(--aj-heading-color);
-        padding: 10px 21px;
+        padding: 10px 22px;
       }
 
       &__title {
         background-color: var(--aj-white);
-        @include aj-font-member(15px);
+        @include aj-font-member(30px);
         color: var(--aj-heading-color);
-        padding: 21px 60px;
+        padding: 10px 22px;
       }
     }
     &:hover {
       .aj-portfolio-items__text {
         opacity: 1;
         visibility: visible;
-        bottom: 100px;
+        bottom: 80px;
       }
     }
   }

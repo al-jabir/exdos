@@ -8322,13 +8322,13 @@ img {
 .aj-portfolio-items__text {
   position: absolute;
   left: 100px;
-  bottom: 30px;
-  text-transform: uppercase;
+  bottom: 50px;
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
 }
 .aj-portfolio-items__text span {
+  text-transform: uppercase;
   display: inline-block;
   background-color: var(--aj-white);
   font-family: var(--aj-font-heading);
@@ -8338,21 +8338,21 @@ img {
   font-family: var(--aj-font-body);
   font-weight: 500;
   color: var(--aj-heading-color);
-  padding: 10px 21px;
+  padding: 10px 22px;
 }
 .aj-portfolio-items__text__title {
   background-color: var(--aj-white);
   font-family: var(--aj-font-heading);
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 30px;
   color: var(--aj-heading-color);
-  padding: 21px 60px;
+  padding: 10px 22px;
 }
 .aj-portfolio-items:hover .aj-portfolio-items__text {
   opacity: 1;
   visibility: visible;
-  bottom: 100px;
+  bottom: 80px;
 }
 
 @media only screen and (min-width:1200px) and (max-width:1400px) {
