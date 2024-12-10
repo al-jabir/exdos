@@ -288,6 +288,15 @@
     display: none;
   }
 }
+.aj-section-title-subtitle {
+  color: var(--aj-body-color);
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: var(--aj-font-body);
+  font-weight: 500;
+}
 
 * {
   margin: 0;
