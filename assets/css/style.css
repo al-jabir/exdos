@@ -8043,11 +8043,12 @@ img {
 }
 .aj-newsletter-back {
   position: absolute;
-  opacity: 0.1;
-  font-size: 100px;
-  left: 100px;
+  font-family: var(--aj-font-heading);
   font-style: normal;
   font-weight: 400;
+  font-size: 100px;
+  opacity: 0.1;
+  left: 100px;
   color: #ffffff;
   bottom: -42px;
 }
@@ -8068,6 +8069,9 @@ img {
     left: 70px;
     bottom: -25px;
   }
+}
+.aj-newsletter-back-2 {
+  color: var(--aj-body-color);
 }
 .aj-newsletter-box form {
   display: flex;
@@ -8097,6 +8101,25 @@ img {
 }
 .aj-newsletter-box input::-ms-input-placeholder {
   color: #fff;
+}
+.aj-newsletter-box-2 input {
+  border-color: var(--aj-body-color);
+  color: var(--aj-body-color);
+}
+.aj-newsletter-box-2 input:focus {
+  border-color: var(--aj-body-color);
+}
+.aj-newsletter-box-2 input:focus::placeholder {
+  opacity: 0;
+}
+.aj-newsletter-box-2 input::-webkit-input-placeholder {
+  color: var(--aj-body-color);
+}
+.aj-newsletter-box-2 input::-moz-placeholder {
+  color: var(--aj-body-color);
+}
+.aj-newsletter-box-2 input::-ms-input-placeholder {
+  color: var(--aj-body-color);
 }
 .aj-newsletter-input {
   width: calc(100% - 210px);

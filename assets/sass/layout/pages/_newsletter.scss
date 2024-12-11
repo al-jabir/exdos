@@ -17,11 +17,9 @@
   }
   &-back {
     position: absolute;
+    @include aj-font-member(100px);
     opacity: 0.1;
-    font-size: 100px;
     left: 100px;
-    font-style: normal;
-    font-weight: 400;
     color: #ffffff;
     bottom: -42px;
     @media #{$xxl,$lg} {
@@ -35,6 +33,9 @@
       font-size: 58px;
       left: 70px;
       bottom: -25px;
+    }
+    &-2 {
+      color: var(--aj-body-color);
     }
   }
   &-box {
@@ -57,6 +58,21 @@
       }
       @include aj-placeholder {
         color: #fff;
+      }
+    }
+    &-2 {
+      & input {
+        border-color: var(--aj-body-color);
+        color: var(--aj-body-color);
+        &:focus {
+          border-color: var(--aj-body-color);
+          &::placeholder {
+            opacity: 0;
+          }
+        }
+        @include aj-placeholder {
+          color: var(--aj-body-color);
+        }
       }
     }
   }
