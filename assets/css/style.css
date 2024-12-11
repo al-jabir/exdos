@@ -8451,9 +8451,6 @@ img {
   border-radius: 15px;
   transition: 0.3s;
 }
-.aj-team-item-thumb a img:hover {
-  filter: blur(1.5px);
-}
 .aj-team-item-thumb__border {
   position: absolute;
   height: 100%;
@@ -8468,6 +8465,12 @@ img {
   opacity: 1;
   visibility: visible;
   top: 50%;
+}
+.aj-team-item-thumb:hover img {
+  filter: blur(1.5px);
+}
+.aj-team-item-thumb:hover__border {
+  filter: blur(1.5px);
 }
 .aj-team-item-social-h2 {
   position: absolute;

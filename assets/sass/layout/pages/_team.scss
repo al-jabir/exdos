@@ -86,7 +86,7 @@
         & img {
           border-radius: 15px;
           transition: 0.3s;
-          &:hover {
+          &:hover + {
             filter: blur(1.5px);
           }
         }
@@ -106,6 +106,12 @@
           opacity: 1;
           visibility: visible;
           top: 50%;
+        }
+        & img {
+          filter: blur(1.5px);
+        }
+        &__border {
+          filter: blur(1.5px);
         }
       }
     }
