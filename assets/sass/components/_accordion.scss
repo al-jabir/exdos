@@ -1,1 +1,31 @@
 @use '../utils' as *;
+.aj-accordion {
+  &-item {
+    border: 1px solid var(--aj-body-color);
+    border-radius: 10px;
+  }
+  &-header {
+    margin: 0;
+  }
+  & button {
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 30px;
+    & span {
+      color: var(--aj-theme-color);
+    }
+    &.collapsed {
+      & span {
+        color: var(--aj-body-color);
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  &-body {
+    border-top: 1px solid var(--aj-body-color);
+    margin: 0 30px;
+    padding-top: 20px;
+  }
+}
