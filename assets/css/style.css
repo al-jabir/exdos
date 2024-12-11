@@ -8472,6 +8472,9 @@ img {
 .aj-team-item-thumb:hover__border {
   filter: blur(1.5px);
 }
+.aj-team-item-thumb:hover ~ .aj-team-item-content .aj-team-item-content__name {
+  color: var(--aj-theme-color);
+}
 .aj-team-item-social-h2 {
   position: absolute;
   top: 55%;

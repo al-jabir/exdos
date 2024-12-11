@@ -110,6 +110,9 @@
         &__border {
           filter: blur(1.5px);
         }
+        ~ .aj-team-item-content .aj-team-item-content__name {
+          color: var(--aj-theme-color);
+        }
       }
     }
     &-social {
