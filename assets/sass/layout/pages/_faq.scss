@@ -1,1 +1,13 @@
 @use '../../utils' as *;
+
+.aj-faq {
+  &-img {
+    position: absolute;
+    height: 100%;
+    width: calc(50% - 65px);
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 20px 20px 0;
+  }
+}
