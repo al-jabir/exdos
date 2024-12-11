@@ -8793,7 +8793,12 @@ img {
     margin-bottom: 30px;
   }
 }
+.aj-blog-items-2 {
+  border: 1px solid var(--aj-body-color);
+  border-radius: 15px;
+}
 .aj-blog-thumb img {
+  width: 100%;
   border-radius: 20px;
 }
 .aj-blog-title .blog-s {
@@ -8824,6 +8829,12 @@ img {
 }
 .aj-blog-btn a:hover {
   color: var(--aj-heading-color);
+}
+.aj-blog-btn-2 a {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 @media (max-width:767px) {

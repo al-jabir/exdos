@@ -5,9 +5,14 @@
     @media #{$xs} {
       margin-bottom: 30px;
     }
+    &-2 {
+      border: 1px solid var(--aj-body-color);
+      border-radius: 15px;
+    }
   }
   &-thumb {
     & img {
+      width: 100%;
       border-radius: 20px;
     }
   }
@@ -35,6 +40,11 @@
       }
       &:hover {
         color: var(--aj-heading-color);
+      }
+    }
+    &-2 {
+      & a {
+        @include aj-font-member(18px);
       }
     }
   }
