@@ -8696,28 +8696,6 @@ img {
   }
 }
 
-.aj-testimonials-swipper-btn span {
-  height: 12px;
-  width: 12px;
-  border-radius: 10px;
-  background-color: #dbdbdb;
-  margin: 0 10px;
-}
-
-.aj-swiper-button-h2-prev {
-  transform: rotate(180deg);
-  margin-top: -10px;
-}
-.aj-swiper-button-h2-prev i {
-  color: #fff;
-}
-.aj-swiper-button-h2-next {
-  margin-top: 10px;
-}
-.aj-swiper-button-h2-next i {
-  color: #fff;
-}
-
 .aj-arrow-shape {
   margin-top: -5px;
 }

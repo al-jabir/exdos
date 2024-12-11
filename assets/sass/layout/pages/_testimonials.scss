@@ -142,32 +142,3 @@
     bottom: -45px;
   }
 }
-
-// home 2 testimonials slider buttons
-
-.aj-testimonials-swipper-btn {
-  & span {
-    height: 12px;
-    width: 12px;
-    border-radius: 10px;
-    background-color: #dbdbdb;
-    margin: 0 10px;
-  }
-}
-.aj-swiper-button {
-  &-h2 {
-    &-prev {
-      transform: rotate(180deg);
-      margin-top: -10px;
-      & i {
-        color: #fff;
-      }
-    }
-    &-next {
-      margin-top: 10px;
-      & i {
-        color: #fff;
-      }
-    }
-  }
-}
