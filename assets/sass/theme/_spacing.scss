@@ -76,7 +76,7 @@
 
 /*-- Margin X --*/
 
-@for $i from 1 through 100 {
+@for $i from 1 through 150 {
   .mx-#{1 * $i} {
     margin-left: 1px * $i;
     margin-right: 1px * $i;
@@ -84,7 +84,7 @@
 }
 
 /*-- Margin Y --*/
-@for $i from 1 through 100 {
+@for $i from 1 through 150 {
   .my-#{1 * $i} {
     margin-top: 1px * $i;
     margin-bottom: 1px * $i;
