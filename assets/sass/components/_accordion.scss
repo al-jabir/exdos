@@ -1,5 +1,8 @@
 @use '../utils' as *;
 .aj-accordion {
+  &-wrapper {
+    padding: 20px 0;
+  }
   &-item {
     border: 1px solid var(--aj-body-color);
     border-radius: 10px;
