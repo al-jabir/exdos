@@ -54,6 +54,59 @@
       top: 30px;
       right: 0;
     }
+    &-h2 {
+      &-1 {
+        right: -80px;
+      }
+      &-2 {
+        right: 180px;
+        bottom: 20px;
+      }
+    }
+  }
+  &-h2 {
+    &-item {
+      & .xtra-qts {
+        display: inline-block;
+        transform: scaleX(-1);
+        margin-right: 10px;
+      }
+      & i {
+        font-size: 45px;
+        color: var(--aj-theme-color-2);
+      }
+    }
+    &-desc {
+      @include aj-font-member(60px);
+      text-transform: uppercase;
+      text-align: left;
+      color: #ffffff;
+    }
+    &-info {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-left: 50px;
+    }
+    &__thumb {
+      & img {
+        border-radius: 15px;
+      }
+    }
+    &-x {
+      text-align: left;
+    }
+    &-name {
+      @include aj-font-member(30px);
+      text-align: center;
+      color: #ffffff;
+    }
+    &-desig {
+      @include aj-font-member(17px);
+      font-family: 'DM Sans';
+      color: #ffffff;
+      opacity: 0.8;
+    }
   }
 }
 
@@ -87,5 +140,34 @@
     top: inherit;
     left: 30px;
     bottom: -45px;
+  }
+}
+
+// home 2 testimonials slider buttons
+
+.aj-testimonials-swipper-btn {
+  & span {
+    height: 12px;
+    width: 12px;
+    border-radius: 10px;
+    background-color: #dbdbdb;
+    margin: 0 10px;
+  }
+}
+.aj-swiper-button {
+  &-h2 {
+    &-prev {
+      transform: rotate(180deg);
+      margin-top: -10px;
+      & i {
+        color: #fff;
+      }
+    }
+    &-next {
+      margin-top: 10px;
+      & i {
+        color: #fff;
+      }
+    }
   }
 }
