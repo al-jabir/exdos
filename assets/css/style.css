@@ -664,6 +664,10 @@ img {
   background-color: var(--aj-spring-color);
 }
 
+.aj-lg-bg {
+  background: radial-gradient(circle, rgb(0, 88, 255) 0%, rgb(255, 76, 0) 96%);
+}
+
 /*--
     - Margin & Padding
 -----------------------------------------*/
@@ -9526,6 +9530,14 @@ img {
   .aj-video-btn img {
     width: 50%;
   }
+}
+
+.aj-brand-text h1 {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
