@@ -76,6 +76,12 @@
       color: var(--aj-heading-color);
     }
   }
+  &-desc {
+    &__h3 {
+      padding-top: 60px;
+      padding-left: 160px;
+    }
+  }
   &-h2 {
     &-desc {
       display: flex;
@@ -217,6 +223,15 @@
   &__h3 {
     &-1 {
       right: 0;
+      top: 12%;
+    }
+    &-2 {
+      right: 0;
+      bottom: 95px;
+      & img {
+        width: 400px;
+        border-radius: 100%;
+      }
     }
   }
 }

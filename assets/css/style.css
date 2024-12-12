@@ -8340,6 +8340,10 @@ img {
   font-size: 100px;
   color: var(--aj-heading-color);
 }
+.aj-hero-desc__h3 {
+  padding-top: 60px;
+  padding-left: 160px;
+}
 .aj-hero-h2-desc {
   display: flex;
   align-items: center;
@@ -8493,6 +8497,15 @@ img {
 }
 .aj-hero-shape__h3-1 {
   right: 0;
+  top: 12%;
+}
+.aj-hero-shape__h3-2 {
+  right: 0;
+  bottom: 95px;
+}
+.aj-hero-shape__h3-2 img {
+  width: 400px;
+  border-radius: 100%;
 }
 
 @media only screen and (min-width:992px) and (max-width:1199px), only screen and (min-width:768px) and (max-width:991px), (max-width:767px) {
