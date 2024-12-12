@@ -8133,6 +8133,12 @@ img {
   opacity: 1;
   visibility: visible;
 }
+.aj-main-menu-2 ul li a {
+  color: var(--aj-heading-color);
+}
+.aj-main-menu-2 ul li a:hover {
+  color: var(--aj-theme-orange);
+}
 
 .aj-header-border {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
@@ -8162,6 +8168,9 @@ img {
 .aj-header-bar button i {
   font-size: 55px;
   color: #fff;
+}
+.aj-header-bar-2 {
+  background: none;
 }
 .aj-header-cta {
   display: flex;

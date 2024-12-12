@@ -195,6 +195,18 @@
       }
     }
   }
+  &-2 {
+    & ul {
+      & li {
+        & a {
+          color: var(--aj-heading-color);
+          &:hover {
+            color: var(--aj-theme-orange);
+          }
+        }
+      }
+    }
+  }
 }
 
 .aj-header {
@@ -225,6 +237,9 @@
         font-size: 55px;
         color: #fff;
       }
+    }
+    &-2 {
+      background: none;
     }
   }
   &-cta {
