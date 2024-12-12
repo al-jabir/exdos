@@ -5,29 +5,13 @@
     @media #{$xs} {
       margin-bottom: 30px;
     }
-    &-2 {
-      border: 1px solid var(--aj-body-color);
-      border-radius: 10px;
-      position: relative;
-    }
   }
   &-thumb {
-    width: 200px;
-    height: 100%;
-    flex: 0 0 auto;
-    transform: translateY(-12px);
-    position: absolute;
-    top: 0;
-    left: 0;
     & img {
-      height: calc(100% + 24px);
-      border-radius: 10px;
-      margin-left: -1px;
+      border-radius: 20px;
     }
   }
-  &-content {
-    padding: 15px 0 15px 210px;
-  }
+
   &-title {
     & .blog-s {
       width: 2px;
@@ -52,11 +36,6 @@
       }
       &:hover {
         color: var(--aj-heading-color);
-      }
-    }
-    &-2 {
-      & a {
-        @include aj-font-member(18px);
       }
     }
   }
