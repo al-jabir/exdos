@@ -9360,11 +9360,25 @@ img {
 }
 .aj-blog-items-2 {
   border: 1px solid var(--aj-body-color);
-  border-radius: 15px;
+  border-radius: 10px;
+  position: relative;
+}
+.aj-blog-thumb {
+  width: 200px;
+  height: 100%;
+  flex: 0 0 auto;
+  transform: translateY(-12px);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .aj-blog-thumb img {
-  width: 100%;
-  border-radius: 20px;
+  height: calc(100% + 24px);
+  border-radius: 10px;
+  margin-left: -1px;
+}
+.aj-blog-content {
+  padding: 15px 0 15px 210px;
 }
 .aj-blog-title .blog-s {
   width: 2px;
