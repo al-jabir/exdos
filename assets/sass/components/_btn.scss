@@ -150,6 +150,12 @@
       right: -100%;
     }
   }
+  &-2 {
+    background: var(--aj-theme-orange);
+    & .shapebtn {
+      background: #ffad8a;
+    }
+  }
   &-3 {
     background: none;
     color: var(--aj-heading-color);
