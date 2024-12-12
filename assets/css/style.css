@@ -346,6 +346,9 @@
   display: inline-block;
   border-radius: 5px;
 }
+.aj-section-title-subtitle-3 span {
+  background: var(--aj-theme-orange);
+}
 
 * {
   margin: 0;
@@ -8734,6 +8737,9 @@ img {
   padding: 40px;
   transition: 0.3s;
 }
+.aj-services-2 {
+  padding-bottom: 5px;
+}
 @media only screen and (min-width:1400px) and (max-width:1600px), only screen and (min-width:1200px) and (max-width:1400px) {
   .aj-services__title {
     font-size: 29px;
@@ -8763,6 +8769,9 @@ img {
   background-color: var(--aj-theme-color);
   color: #fff;
 }
+.aj-services-images img {
+  border-radius: 15px;
+}
 
 .aj-svr-btn {
   display: flex;
@@ -8780,6 +8789,15 @@ img {
 }
 .aj-svr-btn i {
   transform: rotate(-45deg);
+}
+
+.aj-arrow-btn {
+  font-size: 45px;
+  color: var(--aj-body-color);
+  transition: 0.3s;
+}
+.aj-arrow-btn:hover {
+  color: var(--aj-theme-orange);
 }
 
 .aj-project-tab-menu {

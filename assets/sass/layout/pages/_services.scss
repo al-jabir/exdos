@@ -6,6 +6,9 @@
   border-radius: 20px;
   padding: 40px;
   transition: 0.3s;
+  &-2 {
+    padding-bottom: 5px;
+  }
   &__title {
     @media #{$xxl,$xl} {
       font-size: 29px;
@@ -37,6 +40,11 @@
       color: #fff;
     }
   }
+  &-images {
+    & img {
+      border-radius: 15px;
+    }
+  }
 }
 
 .aj-svr-btn {
@@ -54,5 +62,14 @@
   transition: 0.3s;
   & i {
     transform: rotate(-45deg);
+  }
+}
+
+.aj-arrow-btn {
+  font-size: 45px;
+  color: var(--aj-body-color);
+  transition: 0.3s;
+  &:hover {
+    color: var(--aj-theme-orange);
   }
 }

@@ -49,6 +49,11 @@
         display: inline-block;
         border-radius: 5px;
       }
+      &-3 {
+        & span {
+          background: var(--aj-theme-orange);
+        }
+      }
     }
   }
 }
