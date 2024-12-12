@@ -22,6 +22,19 @@
       prevEl: '.aj-swiper-button-prev',
     },
   });
+
+  // testimonials slider
+
+  var swiper = new Swiper('.aj-testimonials-active-2', {
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+    },
+    navigation: {
+      nextEl: '.aj-testimonials-btn__next',
+      prevEl: '.aj-testimonials-btn__prev',
+    },
+  });
   //  brand slider
 
   var swiper = new Swiper('.aj-brand-top-active', {

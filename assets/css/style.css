@@ -9218,6 +9218,29 @@ img {
   color: #ffffff;
   opacity: 0.8;
 }
+.aj-testimonials-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 12px;
+  left: 40%;
+  z-index: 9;
+}
+.aj-testimonials-btn i {
+  font-size: 50px;
+  color: #fff;
+}
+.aj-testimonials-btn__prev {
+  transform: scaleX(-1);
+}
+.aj-testimonials-btn span {
+  background-color: #fff;
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
 
 .aj-swiper-button-next {
   position: absolute;

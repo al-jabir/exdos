@@ -108,6 +108,29 @@
       opacity: 0.8;
     }
   }
+  &-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 12px;
+    left: 40%;
+    z-index: 9;
+    & i {
+      font-size: 50px;
+      color: #fff;
+    }
+    &__prev {
+      transform: scaleX(-1);
+    }
+    & span {
+      background-color: #fff;
+      height: 12px;
+      width: 12px;
+      border-radius: 100%;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .aj-swiper-button-next {
