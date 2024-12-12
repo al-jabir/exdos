@@ -268,6 +268,18 @@
 .aj-btn:hover .shapebtn {
   right: -100%;
 }
+.aj-btn-3 {
+  background: none;
+  color: var(--aj-heading-color);
+  padding: 0;
+  transition: 0.3s;
+}
+.aj-btn-3 i {
+  transform: rotate(-45deg);
+}
+.aj-btn-3:hover {
+  color: var(--aj-theme-orange);
+}
 
 .aj-section-title {
   color: var(--aj-heading-color);
@@ -8137,6 +8149,9 @@ img {
 .aj-header-border {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
+.aj-header-border-3 {
+  border-bottom: 1px solid #f2ddd1;
+}
 .aj-header-search {
   margin-right: 40px;
 }
@@ -8246,8 +8261,11 @@ img {
   }
 }
 .aj-hero-title {
-  color: #fff;
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
   font-size: 110px;
+  color: #fff;
   text-transform: uppercase;
   margin: 0;
 }
@@ -8310,6 +8328,17 @@ img {
 .aj-hero-title-h2 i {
   transform: rotate(-45deg);
   color: var(--aj-theme-color-2);
+}
+.aj-hero-title-h3 {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  color: var(aj-heading-color);
+}
+.aj-hero-title-3 {
+  font-size: 100px;
+  color: var(--aj-heading-color);
 }
 .aj-hero-h2-desc {
   display: flex;
@@ -8399,72 +8428,71 @@ img {
   }
 }
 
-.aj-hero-shap-1 {
+.aj-hero-shape-1 {
   top: 370px;
   left: -40px;
   z-index: 1;
 }
 @media (max-width:767px) {
-  .aj-hero-shap-1 {
+  .aj-hero-shape-1 {
     display: none;
   }
 }
-
-.aj-hero-shap-2 {
+.aj-hero-shape-2 {
   top: 298px;
   left: 410px;
   z-index: 1;
 }
 @media (max-width:767px) {
-  .aj-hero-shap-2 {
+  .aj-hero-shape-2 {
     display: none;
   }
 }
-
-.aj-hero-shap-3 {
+.aj-hero-shape-3 {
   left: 56%;
   top: 32%;
   z-index: 1;
 }
 @media only screen and (min-width:1200px) and (max-width:1400px) {
-  .aj-hero-shap-3 {
+  .aj-hero-shape-3 {
     left: 60%;
     top: 24%;
   }
 }
-
-.aj-hero-shap-4 {
+.aj-hero-shape-4 {
   right: 190px;
   top: 270px;
   z-index: 1;
 }
 @media (max-width:767px) {
-  .aj-hero-shap-4 {
+  .aj-hero-shape-4 {
     display: none;
   }
 }
-
-.aj-hero-shap-5 {
+.aj-hero-shape-5 {
   right: 300px;
   bottom: 130px;
   z-index: 1;
 }
 @media only screen and (min-width:992px) and (max-width:1199px) {
-  .aj-hero-shap-5 {
+  .aj-hero-shape-5 {
     right: 160px;
     bottom: 50px;
   }
 }
 @media only screen and (min-width:768px) and (max-width:991px) {
-  .aj-hero-shap-5 {
+  .aj-hero-shape-5 {
     right: 140px;
     bottom: 100px;
   }
 }
 @media (max-width:767px) {
-  .aj-hero-shap-5 {
+  .aj-hero-shape-5 {
     display: none;
   }
+}
+.aj-hero-shape__h3-1 {
+  right: 0;
 }
 
 @media only screen and (min-width:992px) and (max-width:1199px), only screen and (min-width:768px) and (max-width:991px), (max-width:767px) {

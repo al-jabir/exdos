@@ -150,4 +150,16 @@
       right: -100%;
     }
   }
+  &-3 {
+    background: none;
+    color: var(--aj-heading-color);
+    padding: 0;
+    transition: 0.3s;
+    & i {
+      transform: rotate(-45deg);
+    }
+    &:hover {
+      color: var(--aj-theme-orange);
+    }
+  }
 }
