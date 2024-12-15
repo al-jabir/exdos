@@ -222,16 +222,20 @@
   }
   &__h3 {
     &-1 {
-      right: 0;
-      top: 12%;
+      right: 11%;
+      top: 15%;
     }
     &-2 {
-      right: 0;
-      bottom: 95px;
+      right: 15%;
+      bottom: 11%;
       & img {
         width: 400px;
         border-radius: 100%;
       }
+    }
+    &-3 {
+      top: 7%;
+      right: 15%;
     }
   }
 }
