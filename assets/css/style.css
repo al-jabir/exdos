@@ -8515,6 +8515,7 @@ img {
 .aj-hero-shape__h3-2 {
   right: 15%;
   bottom: 11%;
+  z-index: 1;
 }
 .aj-hero-shape__h3-2 img {
   width: 400px;
