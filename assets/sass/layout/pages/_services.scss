@@ -9,6 +9,9 @@
   &-2 {
     padding-bottom: 5px;
   }
+  &-3 {
+    border-radius: 160px;
+  }
   &__title {
     @media #{$xxl,$xl} {
       font-size: 29px;

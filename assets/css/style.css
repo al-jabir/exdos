@@ -8754,6 +8754,9 @@ img {
 .aj-services-2 {
   padding-bottom: 5px;
 }
+.aj-services-3 {
+  border-radius: 160px;
+}
 @media only screen and (min-width:1400px) and (max-width:1600px), only screen and (min-width:1200px) and (max-width:1400px) {
   .aj-services__title {
     font-size: 29px;
