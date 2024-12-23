@@ -108,6 +108,39 @@
       opacity: 0.8;
     }
   }
+  &-h3 {
+    &-item {
+      float: left;
+    }
+    &-qoute {
+      float: left;
+      margin-right: 25px;
+    }
+    &-desc {
+      @include aj-font-member(40px);
+      text-transform: uppercase;
+      text-align: left;
+      color: #0a0e1a;
+    }
+    &-info {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-left: 0;
+    }
+
+    &-x {
+      text-align: left;
+    }
+    &-name {
+      @include aj-font-member(30px);
+      text-align: center;
+    }
+    &-desig {
+      @include aj-font-member(15px);
+      font-family: 'DM Sans';
+    }
+  }
   &-btn {
     display: inline-flex;
     align-items: center;
@@ -129,6 +162,21 @@
       width: 12px;
       border-radius: 100%;
       margin-bottom: 10px;
+    }
+    &-2 {
+      & i {
+        color: var(--aj-body-color);
+        transition: 0.3s;
+        &:hover {
+          color: var(--aj-theme-orange);
+        }
+      }
+      &__prev {
+        transform: scaleX(-1);
+      }
+      & span {
+        background-color: #dbdbdb;
+      }
     }
   }
 }
