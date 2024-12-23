@@ -12,5 +12,10 @@
     justify-content: center;
     align-items: center;
     gap: -5px;
+    &__logo {
+      @media #{$xs,$sm,$md} {
+        padding-left: 0;
+      }
+    }
   }
 }
