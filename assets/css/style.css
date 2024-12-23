@@ -689,6 +689,10 @@ img {
   background-color: var(--aj-cream);
 }
 
+.aj-cream-bg-2 {
+  background-color: var(--aj-cream-2);
+}
+
 .aj-spring-bg {
   background-color: var(--aj-spring-color);
 }
@@ -9614,6 +9618,19 @@ img {
 }
 .aj-price__fetures ul li i {
   margin-right: 5px;
+}
+
+.aj-clients-brand {
+  border: 1px solid var(--aj-body-color);
+  border-radius: 10px;
+  padding: 45px 50px;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: -5px;
 }
 
 /*# sourceMappingURL=style.css.map */

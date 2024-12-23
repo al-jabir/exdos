@@ -1,0 +1,16 @@
+@use '../../utils' as *;
+
+.aj-clients {
+  &-brand {
+    border: 1px solid var(--aj-body-color);
+    border-radius: 10px;
+    padding: 45px 50px;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: -5px;
+  }
+}
