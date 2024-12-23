@@ -8442,13 +8442,9 @@ img {
 .hero-info-social {
   transform: rotate(-90deg);
   white-space: nowrap;
-}
-@media only screen and (min-width:1400px) and (max-width:1600px) {
-  .hero-info-social {
-    position: absolute;
-    top: 233px;
-    left: -57px;
-  }
+  position: absolute;
+  left: -40px;
+  top: 150px;
 }
 .hero-info-social a {
   transition: 0.3s;
@@ -8459,13 +8455,9 @@ img {
 .hero-info-text {
   transform: rotate(-90deg);
   white-space: nowrap;
-}
-@media only screen and (min-width:1400px) and (max-width:1600px) {
-  .hero-info-text {
-    position: absolute;
-    bottom: 189px;
-    left: -38px;
-  }
+  position: absolute;
+  bottom: 190px;
+  left: -40px;
 }
 
 .aj-hero-shape-1 {

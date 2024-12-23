@@ -142,13 +142,9 @@
   &-social {
     transform: rotate(-90deg);
     white-space: nowrap;
-
-    @media #{$xxl} {
-      position: absolute;
-      top: 233px;
-      left: -57px;
-    }
-
+    position: absolute;
+    left: -40px;
+    top: 150px;
     & a {
       transition: 0.3s;
 
@@ -161,12 +157,9 @@
   &-text {
     transform: rotate(-90deg);
     white-space: nowrap;
-
-    @media #{$xxl} {
-      position: absolute;
-      bottom: 189px;
-      left: -38px;
-    }
+    position: absolute;
+    bottom: 190px;
+    left: -40px;
   }
 }
 
