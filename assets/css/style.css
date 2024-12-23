@@ -8934,6 +8934,19 @@ img {
   }
 }
 
+.aj-cta-area {
+  position: relative;
+}
+.aj-cta-area::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(0, 23, 67, 0.8) 0%, rgba(0, 23, 67, 0.8) 100%), url("../../../../assets/img/cta/bg.png") lightgray 50%/cover no-repeat;
+}
+
 .aj-fact {
   text-align: center;
 }
