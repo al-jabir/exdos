@@ -8781,6 +8781,13 @@ img {
 .aj-services-3 {
   border-radius: 160px;
 }
+.aj-services__title {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--aj-heading-color);
+}
 @media only screen and (min-width:1400px) and (max-width:1600px), only screen and (min-width:1200px) and (max-width:1400px) {
   .aj-services__title {
     font-size: 29px;

@@ -13,6 +13,9 @@
     border-radius: 160px;
   }
   &__title {
+    @include aj-font-member(30px);
+    color: var(--aj-heading-color);
+
     @media #{$xxl,$xl} {
       font-size: 29px;
     }
