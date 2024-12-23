@@ -108,20 +108,41 @@
   border: 1px solid var(--aj-body-color);
   border-radius: 10px;
 }
+.aj-accordion-item-2 {
+  border: none;
+}
 .aj-accordion-header {
   margin: 0;
 }
-.aj-accordion button {
+.aj-accordion-button {
   font-size: 20px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 22px 30px;
 }
-.aj-accordion button span {
+.aj-accordion-button-2 {
+  display: block;
+  text-align: left;
+  font-size: 24px;
+  padding-bottom: 20px;
+  padding-left: 0;
+}
+.aj-accordion-button-2::after {
+  content: "-";
+}
+.aj-accordion-button-2.collapsed {
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+.aj-accordion-button-2.collapsed::after {
+  content: "+";
+}
+.aj-accordion-button span {
   color: var(--aj-theme-color);
 }
-.aj-accordion button.collapsed span {
+.aj-accordion-button.collapsed span {
   color: var(--aj-body-color);
   transform: rotate(-90deg);
 }
@@ -129,6 +150,11 @@
   border-top: 1px solid var(--aj-body-color);
   margin: 0 30px;
   padding-top: 20px;
+}
+.aj-accordion-body-2 {
+  margin: 0;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: none;
 }
 
 .aj-btn {

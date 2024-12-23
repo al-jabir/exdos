@@ -6,16 +6,37 @@
   &-item {
     border: 1px solid var(--aj-body-color);
     border-radius: 10px;
+    &-2 {
+      border: none;
+    }
   }
   &-header {
     margin: 0;
   }
-  & button {
+  &-button {
     font-size: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 22px 30px;
+    &-2 {
+      display: block;
+      text-align: left;
+      font-size: 24px;
+      padding-bottom: 20px;
+      padding-left: 0;
+      &::after {
+        content: '-';
+      }
+      &.collapsed {
+        border-bottom: 1px solid #d9d9d9;
+        margin-bottom: 20px;
+        padding-left: 0;
+        &::after {
+          content: '+';
+        }
+      }
+    }
     & span {
       color: var(--aj-theme-color);
     }
@@ -30,5 +51,10 @@
     border-top: 1px solid var(--aj-body-color);
     margin: 0 30px;
     padding-top: 20px;
+    &-2 {
+      margin: 0;
+      border-bottom: 1px solid #d9d9d9;
+      border-top: none;
+    }
   }
 }
