@@ -9703,4 +9703,32 @@ img {
   }
 }
 
+.aj-process__items {
+  padding: 60px 30px;
+  border: 1px solid var(--aj-body-color);
+  border-radius: 150px;
+  text-align: center;
+}
+.aj-process__step {
+  padding: 40px 0 30px 0;
+}
+.aj-process__step span {
+  text-transform: uppercase;
+  padding: 4px 24px;
+  background-color: var(--aj-theme-orange);
+  color: #fff;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.aj-process__step span:hover {
+  background-color: var(--aj-theme-color);
+}
+.aj-process__title {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--aj-heading-color);
+}
+
 /*# sourceMappingURL=style.css.map */
