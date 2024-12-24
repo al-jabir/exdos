@@ -1,0 +1,77 @@
+@use '../../utils' as *;
+
+.aj-project {
+  &-desc {
+    color: #a3aec3;
+    & b {
+      color: #fff;
+    }
+  }
+  &-thumb {
+    & img {
+      border-radius: 20px;
+    }
+  }
+  &-no {
+    & span {
+      color: #a3aec3;
+      font-size: 30px;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 1px;
+        background: #a3aec3;
+        left: -68px;
+        top: 50%;
+      }
+    }
+  }
+  &-ct {
+    & span {
+      color: #0a0e1a;
+      padding: 4px 16px;
+      background: #ffe9c9;
+      border-radius: 30px;
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    &-2 {
+      & span {
+        background-color: #d6f0ff;
+      }
+    }
+    &-3 {
+      & span {
+        background-color: #ffe4fb;
+      }
+    }
+  }
+  &-text {
+    @include aj-font-member(40px);
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &-btn {
+    & a {
+      @include aj-font-member(18px);
+      color: #a3aec3;
+      transition: 0.3s;
+      & i {
+        margin-left: 5px;
+        transform: rotate(-45deg);
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media #{$xs,$sm,$md} {
+  .rs {
+    flex-flow: column-reverse;
+  }
+}

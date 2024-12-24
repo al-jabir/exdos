@@ -9731,4 +9731,72 @@ img {
   color: var(--aj-heading-color);
 }
 
+.aj-project-desc {
+  color: #a3aec3;
+}
+.aj-project-desc b {
+  color: #fff;
+}
+.aj-project-thumb img {
+  border-radius: 20px;
+}
+.aj-project-no span {
+  color: #a3aec3;
+  font-size: 30px;
+  position: relative;
+}
+.aj-project-no span::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: #a3aec3;
+  left: -68px;
+  top: 50%;
+}
+.aj-project-ct span {
+  color: #0a0e1a;
+  padding: 4px 16px;
+  background: #ffe9c9;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.aj-project-ct-2 span {
+  background-color: #d6f0ff;
+}
+.aj-project-ct-3 span {
+  background-color: #ffe4fb;
+}
+.aj-project-text {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.aj-project-btn a {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #a3aec3;
+  transition: 0.3s;
+}
+.aj-project-btn a i {
+  margin-left: 5px;
+  transform: rotate(-45deg);
+}
+.aj-project-btn a:hover {
+  color: #fff;
+}
+
+@media (max-width:767px), only screen and (min-width:576px) and (max-width:767px), only screen and (min-width:768px) and (max-width:991px) {
+  .rs {
+    flex-flow: column-reverse;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
