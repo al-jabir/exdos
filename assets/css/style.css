@@ -710,6 +710,10 @@ img {
   background-color: var(--aj-sky-color);
 }
 
+.aj-hdw-bg {
+  background-color: var(--aj-theme-color-4);
+}
+
 /*--
     - Margin & Padding
 -----------------------------------------*/
@@ -8580,6 +8584,10 @@ img {
   right: 15%;
 }
 
+.aj-about-wrapper {
+  border-radius: 400px;
+  padding: 150px 150px 150px 50px;
+}
 @media only screen and (min-width:992px) and (max-width:1199px), only screen and (min-width:768px) and (max-width:991px), (max-width:767px) {
   .aj-about-box {
     padding-left: 0;

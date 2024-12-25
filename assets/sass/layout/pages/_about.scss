@@ -1,6 +1,11 @@
 @use '../../utils' as *;
 
 .aj-about {
+  &-wrapper {
+    border-radius: 400px;
+    padding: 150px 150px 150px 50px;
+  }
+
   &-box {
     @media #{$lg,$md,$xs} {
       padding-left: 0;
