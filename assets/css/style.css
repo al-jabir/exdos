@@ -93,6 +93,7 @@
   --aj-white: white;
   --aj-spring-color: #fbf6ef;
   --aj-grey-color: #f6f6f6;
+  --aj-sky-color: #d6f0ff;
 }
 
 :root {
@@ -703,6 +704,10 @@ img {
 
 .aj-lg-bg {
   background: radial-gradient(circle, rgb(0, 88, 255) 0%, rgb(255, 76, 0) 96%);
+}
+
+.aj-sky-bg {
+  background-color: var(--aj-sky-color);
 }
 
 /*--
@@ -8665,6 +8670,11 @@ img {
   z-index: 1;
 }
 
+.aj-newsletter-area-2 {
+  border-radius: 150px;
+  padding: 80px 150px;
+  margin: 20px 100px;
+}
 .aj-newsletter-middle {
   margin-top: -115px;
 }

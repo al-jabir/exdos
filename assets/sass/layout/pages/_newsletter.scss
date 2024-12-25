@@ -1,6 +1,13 @@
 @use '../../utils' as *;
 
 .aj-newsletter {
+  &-area {
+    &-2 {
+      border-radius: 150px;
+      padding: 80px 150px;
+      margin: 20px 100px;
+    }
+  }
   &-middle {
     margin-top: -115px;
   }
