@@ -221,3 +221,13 @@
     }
   }
 }
+
+.aj-footer {
+  &-brand {
+    &__title {
+      & h2 {
+        text-align: center;
+      }
+    }
+  }
+}
