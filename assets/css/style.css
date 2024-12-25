@@ -8998,8 +8998,31 @@ img {
 .aj-fact {
   text-align: center;
 }
+.aj-fact-item-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .aj-fact-icon {
   margin-bottom: 30px;
+}
+.aj-fact-icon-2 {
+  padding-right: 15px;
+  margin-right: 15px;
+  position: relative;
+}
+.aj-fact-icon-2::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 1px;
+  background-color: #d9d9d9;
+  bottom: 0;
+  right: 0;
+}
+.aj-fact-icon-2 i {
+  font-size: 100px;
+  color: var(--aj-theme-orange);
 }
 .aj-fact-title {
   color: #ffffff;
@@ -9020,6 +9043,10 @@ img {
     font-size: 18px;
   }
 }
+.aj-fact-title-2 {
+  color: var(--aj-heading-color);
+  opacity: 1;
+}
 .aj-fact-number {
   color: #ffffff;
   font-family: var(--aj-font-heading);
@@ -9031,6 +9058,9 @@ img {
   .aj-fact-number {
     font-size: 80px;
   }
+}
+.aj-fact-number-2 {
+  color: var(--aj-heading-color);
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
