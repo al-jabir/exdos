@@ -7926,6 +7926,9 @@ img {
   font-weight: 500;
   color: var(--aj-theme-color-2);
 }
+.aj-footer-copyright-2 p a {
+  color: var(--aj-theme-orange);
+}
 
 .aj-footer-widget-area {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
@@ -7969,6 +7972,9 @@ img {
 }
 .aj-footer-menu ul li a:hover {
   color: var(--aj-theme-color-2);
+}
+.aj-footer-menu-2 ul li a:hover {
+  color: var(--aj-theme-orange);
 }
 
 .aj-footer-shape-01 {
