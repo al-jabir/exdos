@@ -6,6 +6,13 @@
     padding: 150px 150px 150px 50px;
   }
 
+  &-images {
+    padding-left: 100px;
+    margin-bottom: 50px;
+    & img {
+      max-width: inherit;
+    }
+  }
   &-box {
     @media #{$lg,$md,$xs} {
       padding-left: 0;
