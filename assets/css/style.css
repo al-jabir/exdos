@@ -8250,6 +8250,22 @@ img {
 .aj-header-bar-2 button i {
   color: var(--aj-font-heading);
 }
+.aj-header-btn {
+  border: 1px solid var(--aj-body-color);
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+.aj-header-btn a {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--aj-heading-color);
+}
+.aj-header-btn a i {
+  margin-left: 5px;
+  transform: rotate(-45deg);
+}
 .aj-header-cta {
   display: flex;
   align-items: center;
