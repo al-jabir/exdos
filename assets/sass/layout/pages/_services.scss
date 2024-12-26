@@ -1,16 +1,23 @@
 @use '../../utils' as *;
 
 .aj-services {
+  &-area {
+    &-2 {
+      border-radius: 100px;
+    }
+  }
   border: 1px solid #57595c;
   margin-right: -1px;
   border-radius: 20px;
   padding: 40px;
   transition: 0.3s;
+
   &-2 {
     padding-bottom: 5px;
   }
   &-3 {
-    border-radius: 160px;
+    border: none;
+    background-color: #fff;
   }
   &__title {
     @include aj-font-member(30px);

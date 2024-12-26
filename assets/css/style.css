@@ -8826,11 +8826,15 @@ img {
   padding: 40px;
   transition: 0.3s;
 }
+.aj-services-area-2 {
+  border-radius: 100px;
+}
 .aj-services-2 {
   padding-bottom: 5px;
 }
 .aj-services-3 {
-  border-radius: 160px;
+  border: none;
+  background-color: #fff;
 }
 .aj-services__title {
   font-family: var(--aj-font-heading);
