@@ -9266,6 +9266,45 @@ img {
 .aj-team-item-thumb:hover ~ .aj-team-item-content .aj-team-item-content__name {
   color: var(--aj-theme-color);
 }
+.aj-team-item-thumb-2 img {
+  margin-bottom: 10px;
+}
+.aj-team-item-thumb-2:hover img {
+  filter: none;
+}
+.aj-team-item-thumb-2:hover__border {
+  filter: none;
+}
+.aj-team-item-thumb__bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 360px;
+  background: #e2dabc;
+  z-index: -1;
+  border-radius: 130px 130px 0 0;
+}
+.aj-team-item-thumb__bg-2 {
+  background-color: #d6f0ff;
+}
+.aj-team-item-thumb__bg-3 {
+  background-color: #ffe4fb;
+}
+.aj-team-item-thumb__bg-4 {
+  background-color: #e2ead7;
+}
+.aj-team-item-thumb__bg-br {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 360px;
+  border: 1px solid var(--aj-body-color);
+  z-index: -1;
+  border-radius: 130px 130px 0 0;
+}
 .aj-team-item-social-h2 {
   position: absolute;
   top: 55%;
