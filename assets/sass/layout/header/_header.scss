@@ -254,15 +254,18 @@
     }
   }
   &-btn {
-    border: 1px solid var(--aj-body-color);
-    padding: 10px 30px;
-    border-radius: 5px;
-    & a {
-      @include aj-font-member(18px);
-      color: var(--aj-heading-color);
-      & i {
-        margin-left: 5px;
-        transform: rotate(-45deg);
+    // home 4 header button
+    &-4 {
+      border: 1px solid var(--aj-body-color);
+      padding: 10px 30px;
+      border-radius: 5px;
+      & a {
+        @include aj-font-member(18px);
+        color: var(--aj-heading-color);
+        & i {
+          margin-left: 5px;
+          transform: rotate(-45deg);
+        }
       }
     }
   }
