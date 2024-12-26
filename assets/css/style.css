@@ -8588,11 +8588,13 @@ img {
   border-radius: 400px;
   padding: 150px 150px 150px 50px;
 }
-.aj-about-images {
-  padding-left: 100px;
-  margin-bottom: 50px;
+.aj-about-images-x {
+  padding-left: 150px;
 }
-.aj-about-images img {
+.aj-about-images-x img {
+  max-width: 100%;
+}
+.aj-about-images-2 img {
   max-width: inherit;
 }
 @media only screen and (min-width:992px) and (max-width:1199px), only screen and (min-width:768px) and (max-width:991px), (max-width:767px) {

@@ -7,10 +7,16 @@
   }
 
   &-images {
-    padding-left: 100px;
-    margin-bottom: 50px;
-    & img {
-      max-width: inherit;
+    &-x {
+      padding-left: 150px;
+      & img {
+        max-width: 100%;
+      }
+    }
+    &-2 {
+      & img {
+        max-width: inherit;
+      }
     }
   }
   &-box {
