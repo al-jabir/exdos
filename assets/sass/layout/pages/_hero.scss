@@ -152,6 +152,23 @@
         color: var(--aj-theme-color-2);
       }
     }
+    &-2 {
+      top: 50%;
+
+      & span,
+      & a {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        color: #0a0e1a;
+      }
+      & a {
+        &:hover {
+          color: var(--aj-theme-orange);
+        }
+      }
+    }
   }
 
   &-text {
@@ -230,6 +247,15 @@
     &-3 {
       top: 7%;
       right: 15%;
+    }
+  }
+  &__h4 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: end;
+    & img {
+      width: 95%;
     }
   }
 }

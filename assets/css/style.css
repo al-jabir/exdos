@@ -8519,6 +8519,19 @@ img {
 .hero-info-social a:hover {
   color: var(--aj-theme-color-2);
 }
+.hero-info-social-2 {
+  top: 50%;
+}
+.hero-info-social-2 span, .hero-info-social-2 a {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  color: #0a0e1a;
+}
+.hero-info-social-2 a:hover {
+  color: var(--aj-theme-orange);
+}
 .hero-info-text {
   transform: rotate(-90deg);
   white-space: nowrap;
@@ -8606,6 +8619,15 @@ img {
 .aj-hero-shape__h3-3 {
   top: 7%;
   right: 15%;
+}
+.aj-hero-shape__h4 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: end;
+}
+.aj-hero-shape__h4 img {
+  width: 95%;
 }
 
 .aj-about-wrapper {
