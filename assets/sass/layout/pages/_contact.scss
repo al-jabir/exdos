@@ -7,6 +7,12 @@
       @include aj-font-member(30px);
     }
   }
+  &-img {
+    & img {
+      max-width: inherit;
+      margin-left: -50px;
+    }
+  }
 }
 .pl-50 {
   @media #{$xs} {
