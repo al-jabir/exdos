@@ -134,7 +134,6 @@
 }
 .aj-accordion-button-2.collapsed {
   border-bottom: 1px solid #d9d9d9;
-  margin-bottom: 20px;
   padding-left: 0;
 }
 .aj-accordion-button-2.collapsed::after {
@@ -8594,7 +8593,7 @@ img {
 .aj-about-images-x img {
   max-width: 100%;
 }
-.aj-about-images-2 img {
+.aj-about-images__desk img {
   max-width: inherit;
 }
 @media only screen and (min-width:992px) and (max-width:1199px), only screen and (min-width:768px) and (max-width:991px), (max-width:767px) {
@@ -8987,6 +8986,10 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
+}
+.aj-contact-img img {
+  max-width: inherit;
+  margin-left: -50px;
 }
 
 @media (max-width:767px) {
