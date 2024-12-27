@@ -7810,45 +7810,16 @@ img {
   height: 1px;
 }
 
-@media (max-width:767px) {
-  .ajfooter-social {
-    padding-left: 0;
-  }
+.aj-footer-brand__title h2 {
+  text-align: center;
 }
-.ajfooter-social a {
-  color: #fff;
-  opacity: 0.7;
-  margin-right: 18px;
-}
-.ajfooter-social a:hover {
-  opacity: 1;
-  color: var(--aj-theme-color-2);
-}
-
-.aj-footer-widget ul {
-  list-style: none;
-}
-.aj-footer-widget ul li {
-  margin-bottom: 5px;
-}
-.aj-footer-widget ul li a {
+.aj-footer-content span {
   font-size: 17px;
   color: #b1b4ba;
 }
-.aj-footer-widget ul li a:hover {
-  color: var(--aj-theme-color-2);
+.aj-footer-contact-item-2 h4 a:hover {
+  color: var(--aj-theme-orange) !important;
 }
-
-.aj-footer-widget-title {
-  font-size: 20px;
-  color: #fff;
-}
-
-.footer-content span {
-  font-size: 17px;
-  color: #b1b4ba;
-}
-
 .aj-footer-contact-item span {
   font-size: 17px;
   color: #b1b4ba;
@@ -7874,6 +7845,49 @@ img {
 }
 .aj-footer-contact-item h4 a:hover {
   color: var(--aj-theme-color-2);
+}
+.aj-footer-newsletter__inp {
+  position: relative;
+  margin-bottom: 15px;
+}
+.aj-footer-newsletter__inp button {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+}
+.aj-footer-newsletter__inp button:hover {
+  color: var(--aj-theme-orange);
+}
+.aj-footer-social {
+  margin-top: 25px;
+}
+.aj-footer-social a {
+  font-size: 25px;
+  margin-right: 18px;
+}
+.aj-footer-social a:hover {
+  opacity: 1;
+  color: var(--aj-theme-orange);
+}
+.aj-footer-widget ul {
+  list-style: none;
+}
+.aj-footer-widget ul li {
+  margin-bottom: 5px;
+}
+.aj-footer-widget ul li a {
+  font-size: 17px;
+  color: #b1b4ba;
+}
+.aj-footer-widget ul li a:hover {
+  color: var(--aj-theme-color-2);
+}
+.aj-footer-widget-title {
+  font-size: 20px;
+  color: #fff;
+}
+.aj-footer-widget-2 ul li a:hover {
+  color: var(--aj-theme-orange);
 }
 
 .aj-footer-col-3 {
@@ -8011,8 +8025,19 @@ img {
   }
 }
 
-.aj-footer-brand__title h2 {
-  text-align: center;
+@media (max-width:767px) {
+  .ajfooter-social {
+    padding-left: 0;
+  }
+}
+.ajfooter-social a {
+  color: #fff;
+  opacity: 0.7;
+  margin-right: 18px;
+}
+.ajfooter-social a:hover {
+  opacity: 1;
+  color: var(--aj-theme-color-2);
 }
 
 /* header area styles */
