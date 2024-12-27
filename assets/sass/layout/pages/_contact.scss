@@ -13,6 +13,27 @@
       margin-left: -50px;
     }
   }
+  &-form {
+    &-box {
+      & input,
+      & textarea {
+        border: 1px solid var(--aj-body-color);
+        border-radius: 10px;
+        padding: 0 25px;
+      }
+      & textarea {
+        height: 160px;
+        padding: 25px;
+      }
+      & .p-relative {
+        & i {
+          position: absolute;
+          right: 25px;
+          top: 18px;
+        }
+      }
+    }
+  }
 }
 .pl-50 {
   @media #{$xs} {

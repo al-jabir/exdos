@@ -8990,6 +8990,20 @@ img {
   max-width: inherit;
   margin-left: -50px;
 }
+.aj-contact-form-box input, .aj-contact-form-box textarea {
+  border: 1px solid var(--aj-body-color);
+  border-radius: 10px;
+  padding: 0 25px;
+}
+.aj-contact-form-box textarea {
+  height: 160px;
+  padding: 25px;
+}
+.aj-contact-form-box .p-relative i {
+  position: absolute;
+  right: 25px;
+  top: 18px;
+}
 
 @media (max-width:767px) {
   .pl-50 {
