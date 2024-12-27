@@ -92,4 +92,31 @@
       },
     },
   });
+  // project slider
+
+  var swiper = new Swiper('.aj-project-active', {
+    spaceBetween: 30,
+    keyboard: {
+      enabled: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+    },
+    navigation: {
+      nextEl: '.aj-swiper-project-next',
+      prevEl: '.aj-swiper-project-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
+  });
 })(jQuery);

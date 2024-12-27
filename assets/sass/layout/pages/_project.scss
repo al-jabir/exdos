@@ -1,6 +1,11 @@
 @use '../../utils' as *;
 
 .aj-project {
+  &-item {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #ffe9c9;
+  }
   &-desc {
     color: #a3aec3;
     & b {
@@ -10,6 +15,41 @@
   &-thumb {
     & img {
       border-radius: 20px;
+    }
+  }
+  &-content {
+    &__text {
+      & span {
+        @include aj-font-member(15px);
+        font-family: 'DM Sans';
+        font-weight: 500;
+        text-transform: uppercase;
+        color: var(--aj-body-color);
+      }
+    }
+    &__title {
+      @include aj-font-member(30px);
+      text-transform: capitalize;
+      color: var(aj-heading-color);
+    }
+    &__link {
+      & a {
+        & i {
+          width: 50px;
+          height: 50px;
+          border: 1px solid var(--aj-body-color);
+          border-radius: 50%;
+          text-align: center;
+          line-height: 50px;
+          transition: 0.5s;
+          &:hover {
+            border: transparent;
+            transform: rotate(-45deg);
+            background: var(--aj-theme-orange);
+            color: #fff;
+          }
+        }
+      }
     }
   }
   &-no {
@@ -67,11 +107,35 @@
         color: #fff;
       }
     }
+    span {
+      background-color: #dbdbdb;
+      height: 12px;
+      width: 12px;
+      border-radius: 100%;
+    }
   }
 }
 
 @media #{$xs,$sm,$md} {
   .rs {
     flex-flow: column-reverse;
+  }
+}
+// margin x
+.mx100 {
+  margin: 0 -100px;
+}
+// slider button
+.probtn {
+  font-size: 52px;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    color: #fc0061;
+  }
+}
+.aj-swiper-project {
+  &-prev {
+    transform: rotate(180deg);
   }
 }
