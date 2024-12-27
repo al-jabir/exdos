@@ -15,8 +15,19 @@
 .aj-footer {
   &-brand {
     &__title {
+      border-bottom: 1px solid #373737;
       & h2 {
-        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        margin-bottom: 0;
+        background: #1a1a1a;
+        display: inline-block;
+        -moz-transform: translateY(19px);
+        -o-transform: translateY(19px);
+        -ms-transform: translateY(19px);
+        -webkit-transform: translateY(19px);
+        transform: translateY(19px);
+        padding: 0 30px;
       }
     }
   }
@@ -65,12 +76,16 @@
 
   &-newsletter {
     &__inp {
+      & input {
+        color: #fff;
+      }
       position: relative;
       margin-bottom: 15px;
       & button {
         position: absolute;
+        font-size: 20px;
         right: 6px;
-        bottom: 6px;
+        bottom: 13px;
         &:hover {
           color: var(--aj-theme-orange);
         }
