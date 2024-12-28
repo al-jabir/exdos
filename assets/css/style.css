@@ -321,6 +321,13 @@
   font-weight: 400;
   font-size: 60px;
 }
+.aj-section-title-5 {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  font-weight: bold;
+}
 .aj-section-title-xs {
   font-family: var(--aj-font-heading);
   font-style: normal;

@@ -4,6 +4,10 @@
   &-title {
     color: var(--aj-heading-color);
     @include aj-font-member(60px);
+    &-5 {
+      @include aj-font-member(40px);
+      font-weight: bold;
+    }
     &-xs {
       @include aj-font-member(100px);
       @media #{$xl} {
