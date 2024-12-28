@@ -1,6 +1,11 @@
 @use '../../utils' as *;
 
 .aj-testimonials {
+  &-area {
+    &-2 {
+      border-radius: 100px;
+    }
+  }
   &-desc {
     @include aj-font-member(100px);
     color: var(--aj-heading-color);
@@ -135,6 +140,27 @@
     &-name {
       @include aj-font-member(30px);
       text-align: center;
+      &__2 {
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 25%;
+          width: 100px;
+          height: 1px;
+          background-color: #57595c;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 25%;
+          width: 100px;
+          height: 1px;
+          background-color: #57595c;
+        }
+      }
     }
     &-desig {
       @include aj-font-member(15px);
@@ -211,5 +237,20 @@
     top: inherit;
     left: 30px;
     bottom: -45px;
+  }
+}
+
+// thumb click slider
+
+.aj-testimonial-thumb-active {
+  & .swiper-slide {
+    & img {
+      transform: scale(0.8);
+    }
+    &.swiper-slide-thumb-active {
+      & img {
+        transform: scale(1);
+      }
+    }
   }
 }

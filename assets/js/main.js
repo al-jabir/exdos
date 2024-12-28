@@ -35,6 +35,28 @@
       prevEl: '.aj-testimonials-btn__prev',
     },
   });
+
+  // testimonials slider 4
+
+  var swiper = new Swiper('.aj-testimonial-thumb-active', {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper2 = new Swiper('.aj-testimonials-active-4', {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+
   //  brand slider
 
   var swiper = new Swiper('.aj-brand-top-active', {
