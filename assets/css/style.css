@@ -8962,6 +8962,12 @@ img {
 .aj-services-images img {
   border-radius: 15px;
 }
+.aj-services-box__right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fff;
+}
 
 .aj-svr-btn {
   display: flex;

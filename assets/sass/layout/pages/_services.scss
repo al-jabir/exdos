@@ -58,6 +58,14 @@
       border-radius: 15px;
     }
   }
+  &-box {
+    &__right {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #fff;
+    }
+  }
 }
 
 .aj-svr-btn {
