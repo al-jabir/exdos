@@ -9974,6 +9974,26 @@ img {
   font-size: 100px;
   color: #ffffff;
 }
+.aj-brand-wrapper {
+  border: 1px solid #57595c;
+  padding: 80px;
+}
+.aj-brand__title h2 {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  color: #57595c;
+  margin-bottom: 0;
+  background: #fff;
+  display: inline-block;
+  -moz-transform: translateY(19px);
+  -o-transform: translateY(19px);
+  -ms-transform: translateY(19px);
+  -webkit-transform: translateY(19px);
+  transform: translateY(19px);
+  padding: 0 30px;
+}
 
 .aj-price-box {
   padding: 45px 50px;

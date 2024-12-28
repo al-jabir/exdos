@@ -7,4 +7,23 @@
       color: #ffffff;
     }
   }
+  &-wrapper {
+    border: 1px solid #57595c;
+    padding: 80px;
+  }
+  &__title {
+    & h2 {
+      @include aj-font-member(30px);
+      color: #57595c;
+      margin-bottom: 0;
+      background: #fff;
+      display: inline-block;
+      -moz-transform: translateY(19px);
+      -o-transform: translateY(19px);
+      -ms-transform: translateY(19px);
+      -webkit-transform: translateY(19px);
+      transform: translateY(19px);
+      padding: 0 30px;
+    }
+  }
 }
