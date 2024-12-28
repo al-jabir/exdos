@@ -294,6 +294,10 @@
 .aj-btn-2 {
   background: var(--aj-theme-orange);
 }
+.aj-btn-2__x span i {
+  margin-left: 5px;
+  transform: rotate(-45deg);
+}
 .aj-btn-2 .shapebtn {
   background: #ffad8a;
 }
@@ -8645,6 +8649,18 @@ img {
 }
 .aj-hero-shape__h4 img {
   width: 95%;
+}
+.aj-hero-shape__h5-1 {
+  left: 2%;
+  top: 27%;
+}
+.aj-hero-shape__h5-2 {
+  top: 20%;
+  left: 40%;
+}
+.aj-hero-shape__h5-3 {
+  left: 45%;
+  bottom: 9%;
 }
 
 .aj-about-wrapper {
