@@ -151,6 +151,14 @@
     }
   }
   &-2 {
+    &__x {
+      & span {
+        & i {
+          margin-left: 5px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
     background: var(--aj-theme-orange);
     & .shapebtn {
       background: #ffad8a;
