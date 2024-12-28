@@ -9914,6 +9914,28 @@ img {
   font-weight: 400;
   font-size: 18px;
 }
+.aj-blog-btn-3 {
+  margin-left: -14px;
+}
+.aj-blog-btn-3 a {
+  padding: 0;
+  font-size: 50px;
+  position: relative;
+}
+.aj-blog-btn-3 a::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: #dcd5ee;
+  border-radius: 50%;
+  z-index: -1;
+  top: 3px;
+  right: -10px;
+}
+.aj-blog-btn-3 a:hover::before {
+  background-color: var(--aj-theme-orange);
+}
 
 @media (max-width:767px) {
   .py-130 {

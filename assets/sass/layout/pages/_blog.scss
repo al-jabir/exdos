@@ -109,6 +109,28 @@
         @include aj-font-member(18px);
       }
     }
+    &-3 {
+      margin-left: -14px;
+      & a {
+        padding: 0;
+        font-size: 50px;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 35px;
+          height: 35px;
+          background-color: #dcd5ee;
+          border-radius: 50%;
+          z-index: -1;
+          top: 3px;
+          right: -10px;
+        }
+        &:hover::before {
+          background-color: var(--aj-theme-orange);
+        }
+      }
+    }
   }
 }
 
