@@ -294,12 +294,12 @@
 .aj-btn-2 {
   background: var(--aj-theme-orange);
 }
+.aj-btn-2 .shapebtn {
+  background: #ffad8a;
+}
 .aj-btn-2__x span i {
   margin-left: 5px;
   transform: rotate(-45deg);
-}
-.aj-btn-2 .shapebtn {
-  background: #ffad8a;
 }
 .aj-btn-3 {
   background: none;
@@ -8929,9 +8929,6 @@ img {
   padding: 40px;
   transition: 0.3s;
 }
-.aj-services-area-2 {
-  border-radius: 100px;
-}
 .aj-services-2 {
   padding-bottom: 5px;
 }
@@ -8983,6 +8980,9 @@ img {
   top: 0;
   right: 0;
   background: #fff;
+}
+.aj-services-area-2 {
+  border-radius: 100px;
 }
 
 .aj-svr-btn {
@@ -10074,6 +10074,10 @@ img {
   border: 1px solid var(--aj-body-color);
   border-radius: 150px;
   text-align: center;
+}
+.aj-process__items-2 {
+  padding: 0;
+  border: none;
 }
 .aj-process__step {
   padding: 40px 0 30px 0;

@@ -151,6 +151,10 @@
     }
   }
   &-2 {
+    background: var(--aj-theme-orange);
+    & .shapebtn {
+      background: #ffad8a;
+    }
     &__x {
       & span {
         & i {
@@ -158,10 +162,6 @@
           transform: rotate(-45deg);
         }
       }
-    }
-    background: var(--aj-theme-orange);
-    & .shapebtn {
-      background: #ffad8a;
     }
   }
   &-3 {
