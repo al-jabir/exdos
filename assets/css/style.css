@@ -9012,6 +9012,45 @@ img {
   color: var(--aj-theme-orange);
 }
 
+/* ======================
+   Services tab
+   ====================== */
+.aj-sv-tab {
+  display: flex;
+  border-bottom: 1px solid #57595c;
+  padding: 24px 0;
+}
+.aj-sv-tab__no {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "DM Sans";
+  color: #b1b4ba;
+  margin-right: 10px;
+  margin-top: 12px;
+}
+.aj-sv-tab__content-title {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+.aj-sv-tab__content p {
+  margin: 0;
+}
+
+.nav-links:first-child .aj-sv-tab {
+  border-top: 1px solid #57595c;
+}
+
+.active .aj-sv-tab__content-title {
+  color: var(--aj-theme-orange);
+}
+
 .aj-project-tab-menu {
   display: flex;
   justify-content: center;
