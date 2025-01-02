@@ -57,6 +57,35 @@
     },
   });
 
+  // home 5 testimonials slider
+
+  var swiper = new Swiper('.aj-test-active', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    keyboard: {
+      enabled: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+    },
+    navigation: {
+      nextEl: '.aj-swiper-team-next',
+      prevEl: '.aj-swiper-team-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
+  });
+
   //  brand slider
 
   var swiper = new Swiper('.aj-brand-top-active', {
