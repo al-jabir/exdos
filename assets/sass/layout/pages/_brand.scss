@@ -1,15 +1,11 @@
 @use '../../utils' as *;
 
 .aj-brand {
-  &-text {
-    & h1 {
-      @include aj-font-member(100px);
-      color: #ffffff;
-    }
-  }
   &-wrapper {
-    border: 1px solid #57595c;
-    padding: 80px;
+    &-2 {
+      border: 1px solid #57595c;
+      padding: 80px;
+    }
   }
   &__title {
     & h2 {
@@ -24,6 +20,12 @@
       -webkit-transform: translateY(19px);
       transform: translateY(19px);
       padding: 0 30px;
+    }
+  }
+  &-text {
+    & h1 {
+      @include aj-font-member(100px);
+      color: #ffffff;
     }
   }
 }
