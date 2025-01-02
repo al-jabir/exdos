@@ -10336,6 +10336,9 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 }
+.aj-project-text-2 {
+  color: var(--aj-heading-color);
+}
 .aj-project-btn a {
   font-family: var(--aj-font-heading);
   font-style: normal;
@@ -10356,6 +10359,26 @@ img {
   height: 12px;
   width: 12px;
   border-radius: 100%;
+}
+.aj-project-btn-2 a {
+  color: #0a0e1a;
+}
+.aj-project-btn-2 a:hover {
+  color: var(--aj-theme-orange);
+}
+.aj-project-logo {
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border: 1px solid #57595c;
+}
+.aj-project-border {
+  border: 1px solid #57595c;
+  padding: 30px;
+  margin-left: -1px;
+  margin-bottom: -1px;
 }
 
 @media (max-width:767px), only screen and (min-width:576px) and (max-width:767px), only screen and (min-width:768px) and (max-width:991px) {

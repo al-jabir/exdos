@@ -93,6 +93,9 @@
     @include aj-font-member(40px);
     text-transform: uppercase;
     color: #ffffff;
+    &-2 {
+      color: var(--aj-heading-color);
+    }
   }
   &-btn {
     & a {
@@ -107,12 +110,34 @@
         color: #fff;
       }
     }
-    span {
+    & span {
       background-color: #dbdbdb;
       height: 12px;
       width: 12px;
       border-radius: 100%;
     }
+    &-2 {
+      & a {
+        color: #0a0e1a;
+        &:hover {
+          color: var(--aj-theme-orange);
+        }
+      }
+    }
+  }
+  &-logo {
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border: 1px solid #57595c;
+  }
+  &-border {
+    border: 1px solid #57595c;
+    padding: 30px;
+    margin-left: -1px;
+    margin-bottom: -1px;
   }
 }
 
