@@ -399,10 +399,13 @@
   height: 100%;
   background-color: #fff;
   padding: 50px 40px;
+  transform: translateX(100%);
   opacity: 0;
   visibility: hidden;
+  transition: 0.3s;
 }
 .aj-offcanvas-open {
+  transform: translateX(0);
   opacity: 1;
   visibility: visible;
 }
