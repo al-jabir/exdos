@@ -1,6 +1,20 @@
 (function ($) {
   'use strict';
 
+  //  offcanvas menu handlers
+
+  $('.offcanvas-toggle').on('click', function () {
+    $('.aj-offcanvas').addClass('aj-offcanvas-open');
+    $('.aj-offcanvas-overlay').addClass('aj-offcanvas-overlay-open');
+  });
+  $('.aj-offcanvas-toggle-close,.aj-offcanvas-overlay').on(
+    'click',
+    function () {
+      $('.aj-offcanvas').removeClass('aj-offcanvas-open');
+      $('.aj-offcanvas-overlay').removeClass('aj-offcanvas-overlay-open');
+    }
+  );
+
   // popup image
 
   $('.popup-img').magnificPopup({
