@@ -38,6 +38,10 @@
       & i {
         font-size: 30px;
         color: var(--aj-heading-color);
+        transition: 0.3s;
+        &:hover {
+          transform: rotate(180deg);
+        }
       }
     }
   }

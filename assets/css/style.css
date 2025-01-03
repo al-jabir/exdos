@@ -430,6 +430,10 @@
 .aj-offcanvas-header button i {
   font-size: 30px;
   color: var(--aj-heading-color);
+  transition: 0.3s;
+}
+.aj-offcanvas-header button i:hover {
+  transform: rotate(180deg);
 }
 .aj-offcanvas-content__title {
   font-size: 35px;
