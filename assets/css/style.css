@@ -395,7 +395,7 @@
   z-index: 9999;
   top: 0;
   right: 0;
-  width: 450px;
+  width: 400px;
   height: 100%;
   background-color: #fff;
   padding: 50px 40px;
@@ -403,6 +403,15 @@
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  scrollbar-width: none;
+}
+@media only screen and (max-width: 400px) {
+  .aj-offcanvas {
+    width: 100%;
+    padding: 30px;
+  }
 }
 .aj-offcanvas-open {
   transform: translateX(0);
@@ -8461,6 +8470,47 @@ img {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+.aj-offcanvas-menu ul li {
+  position: relative;
+}
+.aj-offcanvas-menu ul li a {
+  display: block;
+  padding: 10px 0;
+  font-size: 16px;
+}
+.aj-offcanvas-menu ul li > a {
+  border-bottom: 1px solid #eee;
+}
+.aj-offcanvas-menu ul li :not(:last-child) > a {
+  border-bottom: 1px solid rgba(1, 15, 28, 0.1);
+}
+.aj-offcanvas-menu ul li.active > a {
+  color: var(--aj-theme-color);
+}
+.aj-offcanvas-menu ul li.active > .aj-menu-close {
+  border-color: var(--aj-theme-color);
+  background-color: var(--aj-theme-color);
+  color: #fff;
+  transition: 0.3s;
+}
+.aj-offcanvas-menu ul li.active > .aj-menu-close i {
+  transform: rotate(90deg);
+}
+.aj-offcanvas-menu ul li .sub-menu {
+  display: none;
+  padding-left: 20px;
+}
+.aj-offcanvas-menu ul li .aj-menu-close {
+  position: absolute;
+  top: 9px;
+  right: 0;
+  font-size: 14px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #eee;
 }
 
 @media (max-width:767px) {

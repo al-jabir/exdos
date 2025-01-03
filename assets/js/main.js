@@ -15,6 +15,34 @@
     }
   );
 
+  //  mobile menu
+
+  var ajMenuWrap = $('.aj-mobile-menu-active > ul').clone();
+  var ajSideMenu = $('.aj-offcanvas-menu nav');
+  ajSideMenu.append(ajMenuWrap);
+  if ($(ajSideMenu).find('.sub-menu, .aj-mega-menu').length != 0) {
+    $(ajSideMenu)
+      .find('.sub-menu, .aj-mega-menu')
+      .parent()
+      .append(
+        '<button class="aj-menu-close"><i class="fas fa-chevron-right"></i></button>'
+      );
+  }
+
+  var sideMenuList = $(
+    '.aj-offcanvas-menu nav > ul > li button.aj-menu-close, .aj-offcanvas-menu nav > ul li.has-dropdown > a'
+  );
+  $(sideMenuList).on('click', function (e) {
+    e.preventDefault();
+    if (!$(this).parent().hasClass('active')) {
+      $(this).parent().addClass('active');
+      $(this).siblings('.sub-menu, .aj-mega-menu').slideDown();
+    } else {
+      $(this).siblings('.sub-menu, .aj-mega-menu').slideUp();
+      $(this).parent().removeClass('active');
+    }
+  });
+
   // popup image
 
   $('.popup-img').magnificPopup({
