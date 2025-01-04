@@ -234,21 +234,27 @@
     }
   }
   &-bar {
-    background-color: #23252d;
-    padding: 20px 25px;
-    transform: scaleX(-1);
     & button {
-      & i {
-        font-size: 55px;
-        color: #fff;
-      }
+      background-color: #23252d;
+      padding: 20px 25px;
+      transform: scaleX(-1);
+      font-size: 60px;
+      color: #fff;
     }
     &-2 {
-      background: none;
-      padding: 0;
       & button {
-        & i {
-          color: var(--aj-font-heading);
+        background: none;
+        padding: 0;
+        color: var(--aj-font-heading);
+      }
+    }
+    &-3 {
+      & button {
+        padding: 9px 18px;
+        font-size: 40px;
+        border-radius: 10px;
+        @media #{$sm,$xs} {
+          border-radius: 0;
         }
       }
     }
@@ -316,5 +322,22 @@
   @media #{$xl} {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+.hpx {
+  &-2 {
+    @media #{$lg} {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    @media #{$md} {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @media #{$sm,$xs} {
+      padding-left: 20px;
+      padding-right: 0px;
+    }
   }
 }

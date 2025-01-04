@@ -8395,21 +8395,27 @@ img {
 .aj-header-search-2 button i {
   color: var(--aj-font-heading);
 }
-.aj-header-bar {
+.aj-header-bar button {
   background-color: #23252d;
   padding: 20px 25px;
   transform: scaleX(-1);
-}
-.aj-header-bar button i {
-  font-size: 55px;
+  font-size: 60px;
   color: #fff;
 }
-.aj-header-bar-2 {
+.aj-header-bar-2 button {
   background: none;
   padding: 0;
-}
-.aj-header-bar-2 button i {
   color: var(--aj-font-heading);
+}
+.aj-header-bar-3 button {
+  padding: 9px 18px;
+  font-size: 40px;
+  border-radius: 10px;
+}
+@media only screen and (min-width:576px) and (max-width:767px), (max-width:767px) {
+  .aj-header-bar-3 button {
+    border-radius: 0;
+  }
 }
 .aj-header-btn-4 {
   border: 1px solid var(--aj-body-color);
@@ -8473,6 +8479,25 @@ img {
   .px-80 {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+  .hpx-2 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+  .hpx-2 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (min-width:576px) and (max-width:767px), (max-width:767px) {
+  .hpx-2 {
+    padding-left: 20px;
+    padding-right: 0px;
   }
 }
 
@@ -8592,19 +8617,29 @@ img {
   font-size: 100px;
   text-transform: uppercase;
 }
-@media only screen and (min-width:768px) and (max-width:991px) {
+@media only screen and (min-width:1400px) and (max-width:1600px) {
   .aj-hero-title-h2 {
-    font-size: 65px;
+    font-size: 95px;
   }
 }
-@media (max-width:767px) {
+@media only screen and (min-width:1200px) and (max-width:1400px) {
   .aj-hero-title-h2 {
-    font-size: 39px;
+    font-size: 90px;
+  }
+}
+@media only screen and (min-width:992px) and (max-width:1199px) {
+  .aj-hero-title-h2 {
+    font-size: 75px;
   }
 }
 .aj-hero-title-h2 i {
   transform: rotate(-45deg);
   color: var(--aj-theme-color-2);
+}
+@media only screen and (min-width:1200px) and (max-width:1400px) {
+  .aj-hero-title-h2 i {
+    font-size: 80px;
+  }
 }
 .aj-hero-title-h3 {
   font-family: var(--aj-font-heading);
@@ -8633,9 +8668,14 @@ img {
   font-weight: 500;
   margin: 0;
 }
-@media (max-width:767px) {
+@media only screen and (min-width:992px) and (max-width:1199px) {
   .aj-hero-h2-desc p {
-    font-size: 18px;
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+  .aj-hero-h2-desc p {
+    font-size: 16px;
   }
 }
 .aj-hero-h2-arrow {

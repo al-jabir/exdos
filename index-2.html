@@ -15,7 +15,9 @@
     <!-- header area start -->
 
     <header>
-      <div class="aj-header-area aj-transparent-header aj-header-border px-80">
+      <div
+        class="aj-header-area aj-transparent-header aj-header-border px-80 hpx-2"
+      >
         <div class="container-fluid p-0">
           <div class="row gx-0 align-items-center">
             <div class="col-xl-2 col-md-3 col-6">
@@ -30,7 +32,7 @@
                 class="aj-header-box d-flex justify-content-xl-between justify-content-end align-items-center"
               >
                 <div class="aj-main-menu-h2 pl-45 d-none d-xl-block">
-                  <nav>
+                  <nav class="aj-mobile-menu-active">
                     <ul>
                       <li>
                         <a href="index.html">Home</a>
@@ -45,7 +47,16 @@
                       <li><a href="#">About Us</a></li>
                       <li><a href="#">Services</a></li>
                       <li><a href="#">Portfolio</a></li>
-                      <li><a href="#">Pages</a></li>
+                      <li>
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                          <li><a href="index.html">Home 01</a></li>
+                          <li><a href="index-2.html">Home 02</a></li>
+                          <li><a href="index-3.html">Home 03</a></li>
+                          <li><a href="index-4.html">Home 04</a></li>
+                          <li><a href="index-5.html">Home 05</a></li>
+                        </ul>
+                      </li>
                       <li><a href="#">Blog</a></li>
                       <li><a href="#">Contact</a></li>
                     </ul>
@@ -69,7 +80,7 @@
                       <h4>02 (256) 256 025</h4>
                     </div>
                   </div>
-                  <div class="aj-header-btn">
+                  <div class="aj-header-btn d-none d-lg-flex">
                     <a href="#" class="aj-btn-sec-h2">
                       <div class="aj-btn-wrap">
                         <span class="aj-btn-y-1 text-black">Get Started</span>
@@ -77,6 +88,11 @@
                       </div>
                       <span class="shapebtn"></span>
                     </a>
+                  </div>
+                  <div class="aj-header-bar aj-header-bar-3 d-xl-none ml-30">
+                    <button class="offcanvas-toggle">
+                      <i class="flaticon-menu"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -87,12 +103,68 @@
     </header>
     <!-- header area end -->
 
+    <!-- offcanvas for navigation -->
+
+    <div class="aj-offcanvas">
+      <div class="aj-offcanvas-wrapper">
+        <div class="aj-offcanvas-header mb-50">
+          <a href="index.html" class="aj-offcanvas-logo"
+            ><img src="assets/img/logo/Logo-black.png" alt=""
+          /></a>
+          <button class="aj-offcanvas-toggle-close">
+            <i class="fal fa-times"></i>
+          </button>
+        </div>
+        <div class="aj-offcanvas-menu d-xl-none mb-50">
+          <nav></nav>
+        </div>
+        <div class="aj-offcanvas-content d-none d-xl-block mb-50">
+          <h2 class="aj-offcanvas-content__title">Hello There!</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="aj-offcanvas-gallery mb-50">
+          <a class="popup-img" href="assets/img/project/h5/p1.jpg"
+            ><img src="assets/img/project/h5/p1.jpg" alt=""
+          /></a>
+          <a class="popup-img" href="assets/img/project/h5/p2.jpg"
+            ><img src="assets/img/project/h5/p2.jpg" alt=""
+          /></a>
+          <a class="popup-img" href="assets/img/project/h5/p3.jpg"
+            ><img src="assets/img/project/h5/p3.jpg" alt=""
+          /></a>
+          <a class="popup-img" href="assets/img/project/h5/p4.jpg"
+            ><img src="assets/img/project/h5/p4.jpg" alt=""
+          /></a>
+        </div>
+        <div class="aj-offcanvas-info mb-50">
+          <h3 class="aj-offcanvas__title">Information</h3>
+          <span><a href="#">+ 4 20 7700 1007</a></span>
+          <span><a href="#">hello@exdos.com</a></span>
+          <span><a href="#">Avenue de Roma 158b, Lisboa</a></span>
+        </div>
+        <div class="aj-offcanvas-social mb-50">
+          <h3 class="aj-offcanvas__title">Follow Us</h3>
+
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- offcanvas overlay -->
+
+    <div class="aj-offcanvas-overlay"></div>
+
+    <!-- offcanvas end -->
+
     <!-- main area start -->
     <main>
       <!-- hero area start -->
 
       <section
-        class="aj-hero-area aj-bg pt-265 pb-170 p-relative"
+        class="aj-hero-areas aj-bg pt-265 pb-170 p-relative"
         style="
           background-image: url(assets/img/hero/hero-2-bg.png);
           background-size: cover;
@@ -112,7 +184,7 @@
         </div>
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-lg-8 col-md-6">
+            <div class="col-xl-7 col-lg-8">
               <div class="aj-hero p-relative z-index-11">
                 <div class="mb-30">
                   <h1 class="aj-hero-title-h2">
