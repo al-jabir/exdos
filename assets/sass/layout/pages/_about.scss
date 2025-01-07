@@ -1,6 +1,14 @@
 @use '../../utils' as *;
 
 .aj-about {
+  &-wrappers {
+    @media #{$xl} {
+      padding-left: 120px;
+    }
+    @media #{$lg,$md,$sm,$xs} {
+      padding-left: 0;
+    }
+  }
   &-wrapper {
     border-radius: 400px;
     padding: 150px 150px 150px 50px;
@@ -42,10 +50,16 @@
           font-weight: 300;
           font-size: 30px;
           color: var(--aj-black);
+          @media #{$sm,$xs} {
+            font-size: 20px;
+          }
         }
         & span {
           @include aj-font-member(30px);
           color: var(--aj-heading-color);
+          @media #{$sm,$xs} {
+            font-size: 20px;
+          }
         }
       }
     }

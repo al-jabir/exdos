@@ -3,11 +3,11 @@
 .aj-video-area {
   padding: 300px 30px;
 
-  @media #{$xl, $lg, $md, $xs} {
+  @media #{$lg} {
     padding: 200px 30px;
   }
 
-  @media #{$xs} {
+  @media #{$md, $xs} {
     padding: 100px 30px;
   }
 }
