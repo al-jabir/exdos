@@ -9725,6 +9725,11 @@ img {
   color: var(--aj-heading-color);
   transition: 0.3s;
 }
+@media only screen and (min-width:992px) and (max-width:1199px) {
+  .aj-team-item-content__name {
+    font-size: 26px;
+  }
+}
 .aj-team-item-content__name:hover {
   color: var(--aj-theme-color);
   cursor: pointer;
@@ -9836,6 +9841,16 @@ img {
   text-transform: uppercase;
   text-align: left;
   color: #ffffff;
+}
+@media only screen and (min-width:992px) and (max-width:1199px) {
+  .aj-testimonials-h2-desc {
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+  .aj-testimonials-h2-desc {
+    font-size: 35px;
+  }
 }
 .aj-testimonials-h2-desc-2 {
   font-family: var(--aj-font-heading);
@@ -9986,6 +10001,12 @@ img {
   bottom: 12px;
   left: 40%;
   z-index: 9;
+}
+@media only screen and (min-width:992px) and (max-width:1199px) {
+  .aj-testimonials-btn {
+    left: 55%;
+    bottom: 10px;
+  }
 }
 .aj-testimonials-btn i {
   font-size: 50px;

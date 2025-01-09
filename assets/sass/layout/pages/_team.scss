@@ -194,6 +194,9 @@
         @include aj-font-member(30px);
         color: var(--aj-heading-color);
         transition: 0.3s;
+        @media #{$lg} {
+          font-size: 26px;
+        }
         &:hover {
           color: var(--aj-theme-color);
           cursor: pointer;

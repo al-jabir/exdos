@@ -86,6 +86,12 @@
       text-transform: uppercase;
       text-align: left;
       color: #ffffff;
+      @media #{$lg} {
+        font-size: 45px;
+      }
+      @media #{$md} {
+        font-size: 35px;
+      }
       &-2 {
         @include aj-font-member(24px);
       }
@@ -226,6 +232,10 @@
     bottom: 12px;
     left: 40%;
     z-index: 9;
+    @media #{$lg} {
+      left: 55%;
+      bottom: 10px;
+    }
     & i {
       font-size: 50px;
       color: #fff;
