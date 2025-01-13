@@ -7900,6 +7900,12 @@ img {
   padding-bottom: 170px;
 }
 
+@media only screen and (min-width: 1600px) {
+  .plxxl {
+    padding-left: 0 !important;
+  }
+}
+
 .footer-logo img {
   width: 168px;
 }

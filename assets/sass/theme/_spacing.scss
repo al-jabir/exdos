@@ -115,3 +115,9 @@
 .pb-170 {
   padding-bottom: 170px;
 }
+
+.plxxl {
+  @media only screen and (min-width: 1600px) {
+    padding-left: 0 !important;
+  }
+}
