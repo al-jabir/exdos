@@ -23,17 +23,33 @@
       position: absolute;
       top: 0;
       left: 0;
+      @media #{$xs} {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        transform: translateY(0);
+        padding: 10px;
+      }
       & img {
         height: calc(100% + 24px);
         border-radius: 10px;
         margin-left: -1px;
         border-radius: 20px;
+        @media #{$xs} {
+          width: 100%;
+          height: auto;
+          margin-left: 0;
+        }
       }
     }
   }
   &-content {
     &-2 {
       padding: 15px 0 15px 210px;
+      @media #{$xs} {
+        padding: 30px;
+      }
     }
     &__meta {
       &-x {

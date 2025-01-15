@@ -75,6 +75,9 @@
         display: inline-block;
         transform: scaleX(-1);
         margin-right: 10px;
+        @media #{$xs} {
+          display: none;
+        }
       }
       & i {
         font-size: 45px;
@@ -92,6 +95,14 @@
       @media #{$md} {
         font-size: 35px;
       }
+      @media #{$xs} {
+        font-size: 23px;
+      }
+      & i {
+        @media #{$xs} {
+          display: none;
+        }
+      }
       &-2 {
         @include aj-font-member(24px);
       }
@@ -101,6 +112,9 @@
       align-items: center;
       gap: 2rem;
       margin-left: 50px;
+      @media #{$xs} {
+        margin-left: 0;
+      }
     }
     &__thumb {
       & img {
@@ -109,17 +123,26 @@
     }
     &-x {
       text-align: left;
+      @media #{$xs} {
+        margin-bottom: 30px;
+      }
     }
     &-name {
       @include aj-font-member(30px);
       text-align: center;
       color: #ffffff;
+      @media #{$xs} {
+        font-size: 23px;
+      }
     }
     &-desig {
       @include aj-font-member(17px);
       font-family: 'DM Sans';
       color: #ffffff;
       opacity: 0.8;
+      @media #{$xs} {
+        font-size: 15px;
+      }
     }
   }
   &-h3 {
@@ -235,6 +258,13 @@
     @media #{$lg} {
       left: 55%;
       bottom: 10px;
+    }
+    @media #{$md} {
+      left: 65%;
+      bottom: 0;
+    }
+    @media #{$xs} {
+      bottom: -20px;
     }
     & i {
       font-size: 50px;
