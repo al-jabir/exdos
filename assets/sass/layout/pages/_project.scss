@@ -65,6 +65,14 @@
         background: #a3aec3;
         left: -68px;
         top: 50%;
+        @media #{$md} {
+          width: 15px;
+          left: -20px;
+        }
+        @media #{$xs} {
+          width: 7px;
+          left: -9px;
+        }
       }
     }
   }

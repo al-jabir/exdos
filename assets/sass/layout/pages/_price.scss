@@ -17,6 +17,10 @@
   &__title {
     @include aj-font-member(30px);
     color: var(--aj-heading-color);
+
+    @media #{$xs} {
+      font-size: 26px;
+    }
   }
   &__line {
     width: 100%;
