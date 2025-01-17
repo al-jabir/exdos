@@ -310,6 +310,10 @@
         right: 5%;
         bottom: 9%;
       }
+      @media #{$md,$xs} {
+        right: 3%;
+        bottom: 3%;
+      }
       & img {
         width: 400px;
         border-radius: 100%;
@@ -318,6 +322,12 @@
         }
         @media #{$lg} {
           width: 250px;
+        }
+        @media #{$md} {
+          width: 170px;
+        }
+        @media #{$xs} {
+          width: 100px;
         }
       }
     }
