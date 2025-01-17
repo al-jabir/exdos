@@ -15,6 +15,18 @@
   @media #{$xs} {
     padding-left: 5px;
   }
+  &-image {
+    width: inherit;
+    @media #{$lg} {
+      width: 40%;
+    }
+    @media #{$md} {
+      width: 30%;
+    }
+    @media #{$xs} {
+      display: none;
+    }
+  }
   &-title {
     @include aj-font-member(110px);
     color: #fff;
@@ -88,12 +100,36 @@
     &-3 {
       font-size: 100px;
       color: var(--aj-heading-color);
+      @media #{$lg} {
+        font-size: 60px;
+      }
+      @media #{$md,$xs} {
+        font-size: 45px;
+      }
+      @media #{$xs} {
+        font-size: 23px;
+      }
+      & img {
+        @media #{$xs} {
+          width: 40px;
+        }
+      }
     }
   }
   &-desc {
     &__h3 {
       padding-top: 60px;
       padding-left: 160px;
+      @media #{$lg} {
+        padding-left: 40px;
+      }
+      @media #{$md} {
+        padding-left: 30px;
+      }
+      @media #{$xs} {
+        padding-top: 20px;
+        padding-left: 5px;
+      }
     }
   }
   &-h2 {
@@ -257,14 +293,32 @@
     &-1 {
       right: 11%;
       top: 15%;
+      @media #{$lg} {
+        right: 6%;
+        top: 17%;
+      }
     }
     &-2 {
       right: 14%;
       bottom: 12%;
       z-index: 1;
+      @media #{$xxl} {
+        right: 12%;
+        bottom: 18%;
+      }
+      @media #{$lg} {
+        right: 5%;
+        bottom: 9%;
+      }
       & img {
         width: 400px;
         border-radius: 100%;
+        @media #{$xxl} {
+          width: 300px;
+        }
+        @media #{$lg} {
+          width: 250px;
+        }
       }
     }
     &-3 {
