@@ -11,6 +11,10 @@
     & img {
       max-width: inherit;
       margin-left: -50px;
+      @media #{$lg,$md,$xs} {
+        max-width: 100%;
+        margin: 0;
+      }
     }
   }
   &-form {

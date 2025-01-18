@@ -106,6 +106,10 @@
   &-desc {
     color: var(--aj-heading-color);
     @include aj-font-member(30px);
+    @media #{$md} {
+      font-size: 27px;
+      margin-bottom: 20px;
+    }
   }
   &-btn {
     a {

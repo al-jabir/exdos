@@ -4,6 +4,9 @@
   &-area {
     &-2 {
       border-radius: 100px;
+      @media #{$md,$xs} {
+        border-radius: 0;
+      }
     }
   }
   &-desc {
@@ -182,6 +185,9 @@
           width: 100px;
           height: 1px;
           background-color: #57595c;
+          @media #{$lg,$md,$xs} {
+            display: none;
+          }
         }
         &::after {
           content: '';
@@ -191,6 +197,9 @@
           width: 100px;
           height: 1px;
           background-color: #57595c;
+          @media #{$lg,$md,$xs} {
+            display: none;
+          }
         }
       }
     }

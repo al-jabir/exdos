@@ -65,6 +65,9 @@
   &-area {
     &-2 {
       border-radius: 100px;
+      @media #{$md,$xs} {
+        border-radius: 0;
+      }
     }
   }
 }

@@ -25,6 +25,9 @@
       & img {
         max-width: inherit;
       }
+      @media #{$lg,$md,$xs} {
+        margin-left: 0;
+      }
     }
   }
   &-box {
