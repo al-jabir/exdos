@@ -17,6 +17,18 @@
   @media #{$xs} {
     padding-left: 20px;
   }
+  &-3 {
+    padding: 0 100px;
+    @media #{$lg} {
+      padding: 0 80px;
+    }
+    @media #{$md} {
+      padding: 15px 50px;
+    }
+    @media #{$xs} {
+      padding: 10px 30px;
+    }
+  }
 }
 
 .aj-main-menu {

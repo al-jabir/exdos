@@ -129,6 +129,11 @@
       @media #{$xs} {
         padding-top: 20px;
         padding-left: 5px;
+        & p {
+          & br {
+            display: none;
+          }
+        }
       }
     }
   }
@@ -291,7 +296,7 @@
   }
   &__h3 {
     &-1 {
-      right: 11%;
+      right: 10%;
       top: 15%;
       @media #{$lg} {
         right: 6%;
