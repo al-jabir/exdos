@@ -15,22 +15,22 @@
     <!-- header area start -->
 
     <header>
-      <div class="aj-header-area aj-transparent-header px-100">
+      <div class="aj-header-area aj-transparent-header hpx-3">
         <div class="container-fluid p-0">
           <div class="row gx-0 align-items-center">
-            <div class="col-lg-2">
+            <div class="col-xl-2 col-lg-3 col-md-2 col-6">
               <div class="aj-logo">
                 <a href="index.html">
                   <img src="assets/img/logo/Logo-black.png" alt="Logo" />
                 </a>
               </div>
             </div>
-            <div class="col-lg-10">
+            <div class="col-xl-10 col-lg-9 col-md-10 col-6">
               <div
-                class="aj-header-box d-flex justify-content-between align-items-center"
+                class="aj-header-box d-flex justify-content-end justify-content-xl-between"
               >
                 <div class="aj-main-menu aj-main-menu-2 d-none d-xl-block">
-                  <nav>
+                  <nav class="aj-mobile-menu-active">
                     <ul>
                       <li>
                         <a href="index.html">Home</a>
@@ -52,19 +52,29 @@
                   </nav>
                 </div>
                 <div
-                  class="aj-header-right d-flex align-items-center justify-content-end flex-wrap"
+                  class="aj-header-right d-md-flex justify-content-end flex-wrap align-items-center"
                 >
                   <div class="aj-header-search aj-header-search-2">
-                    <button>
+                    <button
+                      class="d-flex justify-content-center align-items-center"
+                    >
                       <i class="flaticon-search"></i>
                     </button>
                   </div>
                   <span class="aj-header-right__linx"></span>
-                  <div class="aj-header-btn aj-header-btn-4">
+                  <div
+                    class="aj-header-btn aj-header-btn-4 pl-30 d-none d-md-block"
+                  >
                     <a href="contact.html">
                       Let's Talk
                       <i class="fas fa-arrow-right"></i>
                     </a>
+                  </div>
+
+                  <div class="aj-header-bar aj-header-bar-2 d-xl-none pl-15">
+                    <button class="offcanvas-toggle">
+                      <i class="flaticon-menu"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -153,7 +163,7 @@
             <div class="col-lg-6">
               <div class="aj-hero-wrapper">
                 <div
-                  class="hero-info-social hero-info-social-2 d-none d-lg-block"
+                  class="hero-info-social hero-info-social-2 d-none d-xl-block"
                 >
                   <span>Follow Us - </span>
                   <a href="#">Fb</a>/ <a href="#">Tw</a>/ <a href="#">in</a>/
@@ -297,11 +307,13 @@
       <!-- about area start -->
 
       <section class="aj-about-area py-150 px-50">
-        <div class="container-fluid">
+        <div class="container-fluid gx-0">
           <div class="aj-about-wrapper aj-hdw-bg">
             <div class="row align-items-center justify-content-center">
               <div class="col-lg-6">
-                <div class="aj-about-images aj-about-images-x text-center">
+                <div
+                  class="aj-about-images aj-about-images-x text-center mb-30"
+                >
                   <img src="assets/img/about/h4-bg.png" alt="" />
                 </div>
               </div>

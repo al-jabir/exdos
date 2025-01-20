@@ -12,11 +12,18 @@
   &-wrapper {
     border-radius: 400px;
     padding: 150px 150px 150px 50px;
+    @media #{$lg,$md,$sm,$xs} {
+      border-radius: 0;
+      padding: 100px 30px;
+    }
   }
 
   &-images {
     &-x {
       padding-left: 150px;
+      @media #{$lg,$md,$xs} {
+        padding-left: 0;
+      }
       & img {
         max-width: 100%;
       }
@@ -24,6 +31,10 @@
     &__desk {
       & img {
         max-width: inherit;
+        @media #{$md,$xs} {
+          max-width: 100%;
+          margin-top: 30px;
+        }
       }
       @media #{$lg,$md,$xs} {
         margin-left: 0;
@@ -139,4 +150,10 @@
   top: 40%;
   left: 35%;
   z-index: 1;
+}
+
+.px-50 {
+  @media #{$lg,$md,$sm,$xs} {
+    padding: 0;
+  }
 }

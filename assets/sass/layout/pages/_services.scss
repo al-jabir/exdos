@@ -22,6 +22,9 @@
     @media #{$xxl,$xl} {
       font-size: 29px;
     }
+    @media #{$md,$xs} {
+      font-size: 20px;
+    }
   }
   &__list {
     & ul {

@@ -340,16 +340,26 @@
 .hpx {
   &-2 {
     @media #{$lg} {
-      padding-left: 40px;
-      padding-right: 40px;
+      padding: 0 40px;
     }
     @media #{$md} {
-      padding-left: 30px;
-      padding-right: 30px;
+      padding: 0 30px;
     }
     @media #{$sm,$xs} {
       padding-left: 20px;
       padding-right: 0px;
+    }
+  }
+  &-3 {
+    padding: 0 100px;
+    @media #{$lg} {
+      padding: 0 40px;
+    }
+    @media #{$md} {
+      padding: 0 30px;
+    }
+    @media #{$xs} {
+      padding: 0 20px;
     }
   }
 }

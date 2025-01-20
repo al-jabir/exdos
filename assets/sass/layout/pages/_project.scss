@@ -157,6 +157,9 @@
 // margin x
 .mx100 {
   margin: 0 -100px;
+  @media #{$xs} {
+    margin: 0;
+  }
 }
 // slider button
 .probtn {

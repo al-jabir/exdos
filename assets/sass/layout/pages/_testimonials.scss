@@ -161,6 +161,9 @@
       text-transform: uppercase;
       text-align: left;
       color: #0a0e1a;
+      @media #{$xs} {
+        font-size: 25px;
+      }
     }
     &-info {
       display: flex;
@@ -359,4 +362,10 @@
 
 .smr {
   margin-right: -300px;
+}
+
+.px-60 {
+  @media #{$xs} {
+    padding: 0 !important;
+  }
 }

@@ -116,6 +116,7 @@
       }
     }
   }
+
   &-desc {
     &__h3 {
       padding-top: 60px;
@@ -348,6 +349,9 @@
     text-align: end;
     & img {
       width: 95%;
+      @media #{$lg} {
+        max-width: 59%;
+      }
     }
   }
   &__h5 {
