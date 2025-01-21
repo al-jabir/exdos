@@ -1,0 +1,21 @@
+@use '../utils' as *;
+.aj-breadcrumb {
+  &-area {
+    padding: 200px 0 130px 0;
+    background-color: #0a0e1a;
+  }
+  &-title {
+    @include aj-font-member(70px);
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &-list {
+    & li {
+      display: inline-block;
+      margin: 0 3px;
+      &.active {
+        color: var(--aj-theme-color-2);
+      }
+    }
+  }
+}

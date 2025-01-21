@@ -489,6 +489,26 @@
   visibility: visible;
 }
 
+.aj-breadcrumb-area {
+  padding: 200px 0 130px 0;
+  background-color: #0a0e1a;
+}
+.aj-breadcrumb-title {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.aj-breadcrumb-list li {
+  display: inline-block;
+  margin: 0 3px;
+}
+.aj-breadcrumb-list li.active {
+  color: var(--aj-theme-color-2);
+}
+
 * {
   margin: 0;
   padding: 0;
