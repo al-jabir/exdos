@@ -59,5 +59,15 @@
         }
       }
     }
+    &-5 {
+      @media #{$lg,$md,$xs} {
+        & br {
+          display: none !important;
+        }
+      }
+      @media #{$xs} {
+        font-size: 20px;
+      }
+    }
   }
 }
