@@ -8353,6 +8353,7 @@ img {
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
+  box-shadow: 0px 2px 6px rgba(1, 15, 28, 0.2);
 }
 .aj-main-menu ul li .sub-menu li {
   display: block;
