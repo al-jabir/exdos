@@ -50,4 +50,52 @@
       }
     }
   }
+  &-details {
+    &-img {
+      & img {
+        border-radius: 20px;
+      }
+    }
+    &-content {
+      & ul {
+        & li {
+          @include aj-font-member(17px);
+          font-family: var(--aj-font-body);
+          margin: 15px 0;
+          & i {
+            transform: rotate(-45deg);
+            margin-right: 10px;
+          }
+        }
+      }
+      &__title {
+        @include aj-font-member(30px);
+        font-weight: bold;
+      }
+    }
+  }
+  &-widget {
+    background-color: #fbf6ef;
+    padding: 40px 40px;
+    border-radius: 10px;
+    & ul {
+      & li {
+        border: 1px solid #57595c;
+        padding: 17px 30px;
+        background: #fff;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        & label {
+          @include aj-font-member(15px);
+          font-family: var(--aj-font-body);
+          color: #57595c;
+          text-transform: uppercase;
+        }
+        & h5 {
+          @include aj-font-member(20px);
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }

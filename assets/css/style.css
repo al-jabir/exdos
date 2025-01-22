@@ -9972,6 +9972,56 @@ img {
   visibility: visible;
   bottom: 80px;
 }
+.aj-portfolio-details-img img {
+  border-radius: 20px;
+}
+.aj-portfolio-details-content ul li {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  font-family: var(--aj-font-body);
+  margin: 15px 0;
+}
+.aj-portfolio-details-content ul li i {
+  transform: rotate(-45deg);
+  margin-right: 10px;
+}
+.aj-portfolio-details-content__title {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  font-weight: bold;
+}
+.aj-portfolio-widget {
+  background-color: #fbf6ef;
+  padding: 40px 40px;
+  border-radius: 10px;
+}
+.aj-portfolio-widget ul li {
+  border: 1px solid #57595c;
+  padding: 17px 30px;
+  background: #fff;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.aj-portfolio-widget ul li label {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: var(--aj-font-body);
+  color: #57595c;
+  text-transform: uppercase;
+}
+.aj-portfolio-widget ul li h5 {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  font-weight: bold;
+}
 
 @media only screen and (min-width:1200px) and (max-width:1400px) {
   .aj-team-info {
