@@ -8243,10 +8243,20 @@ img {
   line-height: 1.2;
   margin-bottom: 30px;
 }
+@media (max-width:767px) {
+  .aj-blog-post__quote blockquote p {
+    font-size: 18px;
+  }
+}
 .aj-blog-post__quote blockquote cite {
   color: #0a0e1a;
   font-size: 20px;
   font-style: normal;
+}
+@media (max-width:767px) {
+  .aj-blog-post__quote blockquote cite {
+    font-size: 18px;
+  }
 }
 .aj-blog-post__tag-wrapper {
   border: 1px solid #57595c;
