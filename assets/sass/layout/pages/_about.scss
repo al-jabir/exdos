@@ -103,6 +103,13 @@
       color: var(--aj-heading-color);
     }
   }
+  &-feature {
+    &-content {
+      & h4 {
+        @include aj-font-member(30px);
+      }
+    }
+  }
 }
 
 .aj-about-video {

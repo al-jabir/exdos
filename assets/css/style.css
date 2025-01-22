@@ -9166,6 +9166,12 @@ img {
   font-size: 110px;
   color: var(--aj-heading-color);
 }
+.aj-about-feature-content h4 {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+}
 
 @media only screen and (min-width:1200px) and (max-width:1400px), only screen and (min-width:992px) and (max-width:1199px), only screen and (min-width:768px) and (max-width:991px) {
   .aj-about-video {
