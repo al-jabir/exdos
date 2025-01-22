@@ -73,6 +73,83 @@
       }
     }
   }
+  &-widget {
+    background: #fbf6ef;
+    padding: 40px;
+    &-title {
+      @include aj-font-member(24px);
+      font-weight: bold;
+      & span {
+        height: 10px;
+        width: 10px;
+        border-radius: 30px;
+        background: var(--aj-theme-color);
+        display: inline-block;
+        margin-right: 5px;
+        transform: translateY(-3px);
+      }
+    }
+    & ul {
+      & li {
+        margin: 15px 0;
+        & a {
+          @include aj-font-member(17px);
+          font-family: var(--aj-font-body);
+          color: #57595c;
+          display: block;
+          padding: 20px 25px;
+          line-height: 1;
+          position: relative;
+          background-color: #fff;
+          border: 1px solid #57595c;
+          border-radius: 5px;
+          transition: 0.3s;
+          &::after {
+            content: '\f061';
+            font-family: 'Font Awesome 5 Pro';
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%) rotate(-40deg);
+          }
+          &:hover {
+            background-color: var(--aj-theme-color);
+            color: #fff;
+          }
+        }
+      }
+    }
+    &-banner {
+      & img {
+        border-radius: 20px;
+      }
+    }
+  }
+  &-details {
+    &-list {
+      &__title {
+        @include aj-font-member(30px);
+      }
+      &__item {
+        display: flex;
+        align-items: center;
+        background: #fbf6ef;
+        padding: 30px;
+        border-radius: 10px;
+        & span {
+          height: 50px;
+          width: 50px;
+          line-height: 50px;
+          background-color: var(--aj-theme-color);
+          border-radius: 100%;
+          @include aj-font-member(24px);
+          color: #fff;
+          text-align: center;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
 }
 
 .aj-svr-btn {
