@@ -509,6 +509,57 @@
   color: var(--aj-theme-color-2);
 }
 
+/*----------------------------------------*/
+/* 2.10 Skill
+/*----------------------------------------*/
+.aj-skill-item label {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #0a0e1a;
+  line-height: 1;
+}
+
+.progress,
+.progress-stacked {
+  height: 12px;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.progress-bar {
+  background-color: var(--aj-theme-color);
+}
+.progress-outer {
+  border: 1px solid #57595c;
+  padding: 3px;
+  border-radius: 5px;
+  position: relative;
+}
+.progress-num {
+  position: absolute;
+  top: -38px;
+  left: calc(25% - 33px);
+  background: var(--aj-theme-color);
+  padding: 7px 6px;
+  line-height: 1;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 11px;
+}
+.progress-num::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 10px 10px 0;
+  border-color: transparent #0057fc transparent transparent;
+  transform: rotate(0deg);
+  position: absolute;
+  top: 100%;
+  right: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9508,6 +9559,43 @@ img {
   }
 }
 
+.top-exp-wrapper {
+  position: absolute;
+  top: -50px;
+  right: 50px;
+}
+.top-exp-bg {
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  left: -10px;
+  bottom: -10px;
+  border-radius: 10px;
+}
+.top-exp-content {
+  background: var(--aj-theme-color-2);
+  padding: 25px 39px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+.top-exp-content h2 {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  margin-right: 20px;
+}
+.top-exp-content span {
+  font-family: var(--aj-font-heading);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--aj-heading-color);
+}
+
 .aj-project-tab-menu {
   display: flex;
   justify-content: center;
@@ -9701,6 +9789,9 @@ img {
 }
 .aj-fact-number-2 {
   color: var(--aj-heading-color);
+}
+.aj-fact-img img {
+  border-radius: 15px;
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {

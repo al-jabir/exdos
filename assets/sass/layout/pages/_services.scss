@@ -149,3 +149,36 @@
     padding: 0;
   }
 }
+
+.top-exp {
+  &-wrapper {
+    position: absolute;
+    top: -50px;
+    right: 50px;
+  }
+  &-bg {
+    position: absolute;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    left: -10px;
+    bottom: -10px;
+    border-radius: 10px;
+  }
+  &-content {
+    background: var(--aj-theme-color-2);
+    padding: 25px 39px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    & h2 {
+      @include aj-font-member(100px);
+      margin-right: 20px;
+    }
+    & span {
+      @include aj-font-member(30px);
+      color: var(--aj-heading-color);
+    }
+  }
+}
