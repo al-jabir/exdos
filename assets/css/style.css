@@ -10073,6 +10073,11 @@ img {
   top: -50px;
   right: 50px;
 }
+@media (max-width:767px) {
+  .top-exp-wrapper {
+    right: 0;
+  }
+}
 .top-exp-bg {
   position: absolute;
   background-color: #fff;
@@ -10103,6 +10108,12 @@ img {
   font-weight: 400;
   font-size: 30px;
   color: var(--aj-heading-color);
+}
+
+@media (max-width:767px) {
+  .pl-70 {
+    padding-left: 10px;
+  }
 }
 
 .aj-project-tab-menu {

@@ -232,6 +232,9 @@
     position: absolute;
     top: -50px;
     right: 50px;
+    @media #{$xs} {
+      right: 0;
+    }
   }
   &-bg {
     position: absolute;
@@ -257,5 +260,10 @@
       @include aj-font-member(30px);
       color: var(--aj-heading-color);
     }
+  }
+}
+.pl-70 {
+  @media #{$xs} {
+    padding-left: 10px;
   }
 }
