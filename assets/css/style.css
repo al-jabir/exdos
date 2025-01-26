@@ -8370,6 +8370,7 @@ img {
   padding-bottom: 15px;
 }
 .aj-blog-sidebar__post-thumb img {
+  width: 100%;
   border-radius: 5px;
 }
 .aj-blog-sidebar__post-content span i {
