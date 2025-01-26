@@ -53,17 +53,23 @@
       @media #{$xl} {
         margin-right: 15px;
       }
-      & a {
+      & > a {
         color: #fff;
         font-family: var(--aj-font-heading);
         font-size: 18px;
         padding: 36px 0;
-        display: block;
+        display: inline-block;
         position: relative;
-      }
-      &:hover {
-        & a {
+        &:before {
+          // content: '\f10c';
+          font-family: var(--aj-font-flaticon);
+          font-size: 40px;
+          position: absolute;
+          top: -5px;
+          left: 26px;
+          transform: rotate(133deg);
           color: var(--aj-theme-color-2);
+          opacity: 0;
         }
       }
       & .sub-menu {
@@ -76,41 +82,31 @@
         opacity: 0;
         visibility: hidden;
         transition: 0.3s;
-        box-shadow: 0px 2px 6px rgba(1, 15, 28, 0.2);
+        box-shadow: 0px 20px 30px rgba(1, 15, 28, 0.1);
         & li {
           display: block;
           margin-right: 0;
           & a {
-            display: inline-block;
+            display: block;
             color: var(--aj-heading-color);
             font-size: 17px;
-            font-family: var(--aj-font-heading);
             padding: 4px 25px;
+            &:before {
+              display: none;
+            }
           }
           & .sub-menu {
             left: 100%;
             top: 105%;
             opacity: 0;
             visibility: hidden;
-            transition: 0.3s;
-            box-shadow: 0px 2px 6px rgba(1, 15, 28, 0.2);
-
-            & li {
-              & a {
-                text-transform: capitalize;
-              }
-            }
           }
           &:hover {
-            & a {
+            & > a {
               color: var(--aj-theme-color);
-              &::before {
-                opacity: 1;
-                left: 21px;
-              }
             }
-            & .sub-menu {
-              top: 0%;
+            & > .sub-menu {
+              top: 0;
               opacity: 1;
               visibility: visible;
             }
@@ -118,8 +114,12 @@
         }
       }
       &:hover {
-        & a {
+        & > a {
           color: var(--aj-theme-color-2);
+          &:before {
+            opacity: 1;
+            top: 0;
+          }
         }
         & .sub-menu {
           top: 100%;
