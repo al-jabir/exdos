@@ -15,6 +15,17 @@
     }
   );
 
+  // search bar handlers
+
+  $('.aj-search-toggle').on('click', function () {
+    $('.aj-header-search-bar').addClass('aj-search-open');
+    $('.aj-offcanvas-overlay').addClass('aj-offcanvas-overlay-open');
+  });
+  $('.aj-search-close, .aj-offcanvas-overlay').on('click', function () {
+    $('.aj-header-search-bar').removeClass('aj-search-open');
+    $('.aj-offcanvas-overlay').removeClass('aj-offcanvas-overlay-open');
+  });
+
   //  mobile menu
 
   var ajMenuWrap = $('.aj-mobile-menu-active > ul').clone();
