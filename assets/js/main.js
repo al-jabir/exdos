@@ -1,6 +1,47 @@
 (function ($) {
   'use strict';
 
+  // Sticky Header Handler
+
+  var windowOn = $(window);
+  windowOn.on('scroll', function () {
+    var scroll = windowOn.scrollTop();
+    if (scroll < 100) {
+      $('#header-sticky').removeClass('header-sticky');
+    } else {
+      $('#header-sticky').addClass('header-sticky');
+    }
+  });
+
+  // extra tools
+
+  // // background image attribute
+  // $('[data-background]').each(function () {
+  //   $(this).css(
+  //     'background-image',
+  //     'url(' + $(this).attr('data-background') + ')'
+  //   );
+  // });
+  // // background color attribute
+  // $('[data-bg-color]').each(function () {
+  //   $(this).css('background-color', $(this).attr('data-bg-color'));
+  // });
+  // // color attribute
+  // $('[data-color]').each(function () {
+  //   $(this).css('color', $(this).attr('data-color'));
+  // });
+
+  // // about intro video Popup
+  // $('.popup-image').magnificPopup({
+  //   type: 'image',
+  //   // other options
+  // });
+
+  // $('.popup-video').magnificPopup({
+  //   type: 'iframe',
+  //   // other options
+  // });
+
   //  offcanvas menu handlers
 
   $('.offcanvas-toggle').on('click', function () {

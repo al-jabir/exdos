@@ -9144,6 +9144,39 @@ img {
   box-shadow: 0px 2px 6px rgba(1, 15, 28, 0.2);
 }
 
+@keyframes ajFadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.tpFadeInDown {
+  animation: ajFadeInDown 1s ease-out forwards;
+}
+
+.header-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--aj-common-black);
+  z-index: 9999;
+  -webkit-animation: 500ms ease-in-out 0s normal none 1 running ajFadeInDown;
+  animation: 500ms ease-in-out 0s normal none 1 running ajFadeInDown;
+  -webkit-box-shadow: 0px 4px 10px rgba(3, 4, 28, 0.1);
+  box-shadow: 0px 4px 10px rgba(3, 4, 28, 0.1);
+}
+.header-sticky.aj-header-black {
+  background-color: var(--aj-common-black);
+}
+.header-sticky.aj-header-white {
+  background-color: #ffffff;
+}
+
 .aj-offcanvas-menu ul li {
   position: relative;
 }
