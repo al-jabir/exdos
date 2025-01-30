@@ -4,6 +4,11 @@
   // Sticky Header Handler
 
   var windowOn = $(window);
+
+  windowOn.on('load', function () {
+    wowAnimation();
+  });
+
   windowOn.on('scroll', function () {
     var scroll = windowOn.scrollTop();
     if (scroll < 100) {
