@@ -253,4 +253,10 @@
     });
     wow.init();
   }
+
+  if ($('.jarallax').length) {
+    $('.jarallax').jarallax({
+      speed: 0.2,
+    });
+  }
 })(jQuery);

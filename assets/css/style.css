@@ -1174,6 +1174,25 @@ img {
   background-color: var(--aj-theme-color-4);
 }
 
+.aj-images-main {
+  height: 800px;
+}
+@media only screen and (min-width:992px) and (max-width:1199px) {
+  .aj-images-main {
+    height: 600px;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+  .aj-images-main {
+    height: 500px;
+  }
+}
+@media (max-width:767px) {
+  .aj-images-main {
+    height: 400px;
+  }
+}
+
 /*--
     - Margin & Padding
 -----------------------------------------*/
@@ -10611,7 +10630,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(0deg, rgba(0, 23, 67, 0.8) 0%, rgba(0, 23, 67, 0.8) 100%), url("../../../../assets/img/cta/bg.png") lightgray 50%/cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 23, 67, 0.8) 0%, rgba(0, 23, 67, 0.8) 100%);
 }
 
 .aj-fact {

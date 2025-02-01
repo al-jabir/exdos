@@ -104,3 +104,15 @@ img {
 .aj-hdw-bg {
   background-color: var(--aj-theme-color-4);
 }
+.aj-images-main{
+    height: 800px;
+    @media #{$lg}{
+        height: 600px;
+    }
+    @media #{$md}{
+        height: 500px;
+    } 
+    @media #{$xs}{
+        height: 400px;
+    }
+}
