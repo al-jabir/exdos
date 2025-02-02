@@ -1,13 +1,32 @@
 (function ($) {
   'use strict';
 
-  // Sticky Header Handler
-
   var windowOn = $(window);
 
   windowOn.on('load', function () {
     wowAnimation();
   });
+
+  // preloader
+
+  windowOn.on('load', function () {
+    $('#loading').fadeOut(500);
+  });
+
+  // back-to-top
+  var btn = $('#back-to-top');
+  windowOn.scroll(function () {
+    if (windowOn.scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+  btn.on('click', function () {
+    $('html, body').animate({ scrollTop: 0 }, '300');
+  });
+
+  // Sticky Header Handler
 
   windowOn.on('scroll', function () {
     var scroll = windowOn.scrollTop();
